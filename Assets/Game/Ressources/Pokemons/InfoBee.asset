@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8aea73f5ac9c8459db79b1e0ad7ab7, type: 3}
+  m_Name: InfoBee
+  m_EditorClassIdentifier: 
+  name: 
+  description: 
+  frontSprite: {fileID: 21300000, guid: 43a56e125987049f191fcdeb4fa4ec2f, type: 3}
+  backSprite: {fileID: 21300000, guid: 9783e8787b2534ee3b37444e33c1bdcd, type: 3}
+  type1: 1
+  type2: 1
+  maxHp: 100
+  attack: 23
+  defense: 23
+  spAttack: 10
+  spDefense: 10
+  speed: 10
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 63b80f65a9ead488ab20caa11ac58a23, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: b6e0df17210c7844298b4080128e845c, type: 2}
+    level: 3
