@@ -22,11 +22,10 @@ public class Pokemon
     public int HP {get; set;} //current HP of the pokemon
 
     public List<Move> Moves {get; set;}
+    public Dictionary<Stat,int> Stats {get; private set;}
 
     public void Init()
     {
-        HP=MaxHp;
-
         //generates moves to pokemon according to his level
         Moves= new List<Move>();
         foreach (var move in Base.GetLearnableMoves())
@@ -40,30 +39,49 @@ public class Pokemon
                 break;
             }
         }
+        CalculateStats();
+        HP=MaxHp;
+    }
+
+    void CalculateStats()
+    {
+        Stats= new Dictionary<Stat, int>();
+        Stats.Add(Stat.Attack,Mathf.FloorToInt((Base.GetAttack()*Level)/100f)+5);
+        Stats.Add(Stat.Defense,Mathf.FloorToInt((Base.GetDefense()*Level)/100f)+5);
+        Stats.Add(Stat.SpAttack,Mathf.FloorToInt((Base.GetSpAttack()*Level)/100f)+5);
+        Stats.Add(Stat.SpDefense,Mathf.FloorToInt((Base.GetSpDefense()*Level)/100f)+5);
+        Stats.Add(Stat.Speed,Mathf.FloorToInt((Base.GetSpeed()*Level)/100f)+5);
+        MaxHp=Mathf.FloorToInt((Base.GetMaxHp()*Level)/100f)+10;
+    }
+
+    int GetStat(Stat stat)
+    {
+        int statVal= Stats[stat];
+        //TODO : Apply stat boost
+
+        return statVal;
     }
 
     public int Attack{
-        get{return Mathf.FloorToInt((Base.GetAttack()*Level)/100f)+5;}
+        get{return GetStat(Stat.Attack);}
     }
 
     public int Defense{
-        get{return Mathf.FloorToInt((Base.GetDefense()*Level)/100f)+5;}
+        get{return GetStat(Stat.Defense);}
     }
 
     public int SpAttack{
-        get{return Mathf.FloorToInt((Base.GetSpAttack()*Level)/100f)+5;}
+        get{return GetStat(Stat.SpAttack);}
     }
 
     public int SpDefense{
-        get{return Mathf.FloorToInt((Base.GetSpDefense()*Level)/100f)+5;}
+        get{return GetStat(Stat.SpDefense);}
     }
     public int Speed{
-        get{return Mathf.FloorToInt((Base.GetSpeed()*Level)/100f)+5;}
+        get{return GetStat(Stat.Speed);}
     }
 
-    public int MaxHp{
-        get{return Mathf.FloorToInt((Base.GetMaxHp()*Level)/100f)+10;}
-    }
+    public int MaxHp{get;private set;}
 
     public DamageDetails TakeDamage(Move move, Pokemon attacker)
     //return true if batlle is finished else the battle continue=false

@@ -121,6 +121,14 @@ public enum PokemonType
     Dragon
 }
 
+public enum Stat{ //boost stat
+    Attack,
+    Defense,
+    SpAttack,
+    SpDefense,
+    Speed,
+}
+
 public class TypeChart
 {
     static float[][]chart=
