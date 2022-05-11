@@ -62,6 +62,8 @@ public class BattleSystem : MonoBehaviour
         partyScreen.gameObject.SetActive(true);
     }
 
+    
+
     void MoveSelection()
     {
 
@@ -134,7 +136,7 @@ public class BattleSystem : MonoBehaviour
 
         }
         else    
-            BattleOver(true);
+            BattleOver(true); // the player won
     }
 
     IEnumerator ShowDamageDetails(DamageDetails damageDetails)
@@ -190,6 +192,7 @@ public class BattleSystem : MonoBehaviour
             {
                 //Fight selected
                 MoveSelection();
+                
             }
             else if (currentAction == 1)
             {
@@ -203,6 +206,9 @@ public class BattleSystem : MonoBehaviour
             else if (currentAction == 3)
             {
                 //Run selected
+                BattleOver(true);
+                
+                
             }
         }
     }
@@ -263,7 +269,7 @@ public class BattleSystem : MonoBehaviour
             }
             if(selectedMember==playerUnit.Pokemon)
             {   
-                partyScreen.SetMessageText("You can't swotch with the same pokemon");
+                partyScreen.SetMessageText("You can't switch with the same pokemon");
                 return; //si pokemon HP<=0
 
             }

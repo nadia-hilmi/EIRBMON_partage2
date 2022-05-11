@@ -11,6 +11,19 @@ public class GameController : MonoBehaviour
     [SerializeField] Camera worldCamera;
     GameState state;
 
+    public void playerInitializePosition () {
+        playerController.transform.position = new Vector3(0, 0, 0);
+    }
+    public void playerSetPositionX (int pos) {
+        playerController.transform.position += new Vector3(pos, 0, 0);
+    }
+
+    public void playerSetPositionY (int pos) {
+        playerController.transform.position += new Vector3(0, pos, 0);
+    }
+
+    
+
     private void Start(){
         playerController.OnEncountered+=StartBattle;
         battleSystem.OnBattleOver+=EndBattle;

@@ -48,6 +48,10 @@ struct DOGetter_1_t709462C08281F3AA5DFEF36CAF91404B1004C338;
 struct DOSetter_1_t5E2B8A5C7040616545D7D029D20C4BF5F3E6DA89;
 // DG.Tweening.Core.DOSetter`1<UnityEngine.Vector3>
 struct DOSetter_1_t02E8F9920F174322F1CF5AC8BCDEAABD14A03358;
+// System.Collections.Generic.Dictionary`2<System.Int32Enum,System.Int32>
+struct Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62;
+// System.Collections.Generic.Dictionary`2<Stat,System.Int32>
+struct Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A;
 // System.Func`2<System.Object,System.Boolean>
 struct Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00;
 // System.Func`2<Pokemon,System.Boolean>
@@ -56,10 +60,16 @@ struct Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18;
 struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
 // System.Collections.Generic.IEnumerable`1<Pokemon>
 struct IEnumerable_1_t23954CFFE078BB8819F11456EDD42D72F287AFC6;
+// System.Collections.Generic.IEqualityComparer`1<Stat>
+struct IEqualityComparer_1_tDF5F44BD0EC8B130C6276C6862C93290804450B2;
+// System.Collections.Generic.Dictionary`2/KeyCollection<Stat,System.Int32>
+struct KeyCollection_tF86F906795E0B3FBF7EF71D753BA6870DE483036;
 // System.Collections.Generic.List`1<DG.Tweening.Core.ABSSequentiable>
 struct List_1_t0C6BF1E3B166E9D2A63FC3291C519D61B950BFDC;
 // System.Collections.Generic.List`1<UnityEngine.UI.Image>
 struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
+// System.Collections.Generic.List`1<System.Int32>
+struct List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73;
 // System.Collections.Generic.List`1<LearnableMove>
 struct List_1_tF7B7F582819942138622D763F715A4CFCAC46E7C;
 // System.Collections.Generic.List`1<Move>
@@ -80,6 +90,10 @@ struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
 struct TweenerCore_3_tC0593021331EF2AF46590E2184F512C0D38FD4C3;
 // DG.Tweening.Core.TweenerCore`3<UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions>
 struct TweenerCore_3_tCD82DFC45FB71C681FA8659EA63A7D7D16BFFE77;
+// System.Collections.Generic.Dictionary`2/ValueCollection<Stat,System.Int32>
+struct ValueCollection_t6882F25777900A79779621051C9E3C3D9CAD9E74;
+// System.Collections.Generic.Dictionary`2/Entry<Stat,System.Int32>[]
+struct EntryU5BU5D_t24FA669F8CA749AD097A5EB72A4C7A270DDA01A4;
 // System.Single[][]
 struct SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4;
 // System.Byte[]
@@ -88,6 +102,8 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 // LearnableMove[]
@@ -263,6 +279,7 @@ IL2CPP_EXTERN_C RuntimeClass* Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C
 IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DOTween_t96369E1D40ABE93A56308F57DEA6B04219C66D13_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DamageDetails_tC95BF633730C2F30583FC8B023435E3F384CBF45_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2_il2cpp_TypeInfo_var;
@@ -295,7 +312,6 @@ IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6E6E6BAD3945C433C5BAA5526840A72CBAE3BCCA2ED6CD12A6229EB923860A0E_3_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____7DD7BFA364E7D67FE7CC8761BBF5FFFE8E844798FD9C424CCD081094D19AE4B7_4_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____85B7DA499E22FD39375FEFA77E38086D5FCF441650AF44FF4512DEC2F2800F90_5_FieldInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteral03EA7D5B54662E964A17D060B599BEA2F010F74D;
 IL2CPP_EXTERN_C String_t* _stringLiteral0670D148D1BD7940246ECDACCF689E021B975DC2;
 IL2CPP_EXTERN_C String_t* _stringLiteral0CBDEBEEEF96E39221353BF57302B98ED9DDE7BF;
 IL2CPP_EXTERN_C String_t* _stringLiteral15196F05B117690F3E12E56AA0C43803EA0D2A46;
@@ -318,11 +334,15 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB07C5CC8BC08F3BE092264A6DE8BE6AEA0C31B4A
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralE9358733049E8E2E993A426E598AA8A0A563E8E9;
 IL2CPP_EXTERN_C String_t* _stringLiteralF0371BF1E723020B1545C18F9BFDF5DB10EB003D;
+IL2CPP_EXTERN_C String_t* _stringLiteralFD8FEB55828818F43F13EAFF8F21468BECEA3FBC;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mE74EE63C85A63FC34DCFC631BC229207B420BC79_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisMapArea_t7B36C37553B4B797179AD20FBD1CF9469AF35CCF_m60E7A3F85F9D055010A06165BEF65FAF743A1047_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisPokemonParty_tF235BC2682C3274A4B48E7CB77095A663B0A2612_mF3C3B615B3F9B1780A912FA5B8DE4E8D50247342_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisPartyMemberUI_tE9DE56120EC185D3981541FFDDF02B0615D9F503_mC007C7D1F6190B4A27B115D926BF993059D1D98D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m0FA39ECAE01EC2F1CD4F8C764C2967FEB39C901A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m0C2AE999B277EA1A2DCDF384FBFF07792169FC45_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_FirstOrDefault_TisPokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588_m7DC3C1CA61234E5B5DEDC40530526D1759138C51_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Where_TisPokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588_mE31BFA0197803615F678DA2E4F6F0C9B315187CA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m6E1097A0ACAC70E340FAB674B267EB1E67EDB371_RuntimeMethod_var;
@@ -343,6 +363,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mB7A26D4B8FF62F003F6E94F65
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mA0CC3B23C12C18F1843305F7BF37428F04C96D56_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mC29CCDA4CF5ECCD01597B8831F8D2E6C637B8958_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mD575040BED5E15F408E2E182CAFDF0EF52625E87_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisMapArea_t7B36C37553B4B797179AD20FBD1CF9469AF35CCF_m00102B5C206AAF59E8FFAF891D76E796B0F8FA15_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CEnemyMoveU3Ed__20_System_Collections_IEnumerator_Reset_mDFB516B802EB9FC764C2AA6FC5841C9F648023CB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CMoveU3Ed__11_System_Collections_IEnumerator_Reset_m5E6A66BA3C992175DC6E2DF74077157D8770D354_RuntimeMethod_var;
@@ -353,7 +374,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CSetupBattleU3Ed__14_System_Collections_I
 IL2CPP_EXTERN_C const RuntimeMethod* U3CShowDamageDetailsU3Ed__23_System_Collections_IEnumerator_Reset_m00AED666F259BCB54B4C5799FB083E0EC3BF406C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CSwitchPokemonU3Ed__28_System_Collections_IEnumerator_Reset_mE895BB03EA8DE924E59CA36BCB63B478DE9C5C98_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CTypeDialogU3Ed__11_System_Collections_IEnumerator_Reset_m270BF2E771458B4788ECFCC87C539131435FA9AA_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CGetHealthyPokemonU3Eb__4_0_m788527D417CD19D292C94CE8E0CC8BA2327C29FE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CGetHealthyPokemonU3Eb__5_0_m51A49AC449D85338ECAF78A4B61A1A943E580B83_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CUpdateHPU3Ed__5_System_Collections_IEnumerator_Reset_m0867E7E712002E6116CC0D596F19690C5EC7EC97_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
@@ -378,6 +399,50 @@ IL2CPP_EXTERN_C_END
 // <Module>
 struct U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B 
 {
+};
+
+// System.Collections.Generic.Dictionary`2<Stat,System.Int32>
+struct Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t24FA669F8CA749AD097A5EB72A4C7A270DDA01A4* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tF86F906795E0B3FBF7EF71D753BA6870DE483036* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t6882F25777900A79779621051C9E3C3D9CAD9E74* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.List`1<System.Int32>
+struct List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<LearnableMove>
@@ -516,6 +581,10 @@ struct Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588  : public RuntimeObject
 	int32_t ___U3CHPU3Ek__BackingField_2;
 	// System.Collections.Generic.List`1<Move> Pokemon::<Moves>k__BackingField
 	List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* ___U3CMovesU3Ek__BackingField_3;
+	// System.Collections.Generic.Dictionary`2<Stat,System.Int32> Pokemon::<Stats>k__BackingField
+	Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* ___U3CStatsU3Ek__BackingField_4;
+	// System.Int32 Pokemon::<MaxHp>k__BackingField
+	int32_t ___U3CMaxHpU3Ek__BackingField_5;
 };
 
 // System.String
@@ -702,8 +771,8 @@ struct U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields
 {
 	// PokemonParty/<>c PokemonParty/<>c::<>9
 	U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B* ___U3CU3E9_0;
-	// System.Func`2<Pokemon,System.Boolean> PokemonParty/<>c::<>9__4_0
-	Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18* ___U3CU3E9__4_0_1;
+	// System.Func`2<Pokemon,System.Boolean> PokemonParty/<>c::<>9__5_0
+	Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18* ___U3CU3E9__5_0_1;
 };
 
 // System.Collections.Generic.List`1/Enumerator<LearnableMove>
@@ -1228,6 +1297,13 @@ struct GameState_t152D0B22E8EE644B8FE170865D50FB96CC7FA08A
 	int32_t ___value___2;
 };
 
+// System.Int32Enum
+struct Int32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C 
+{
+	// System.Int32 System.Int32Enum::value__
+	int32_t ___value___2;
+};
+
 // UnityEngine.KeyCode
 struct KeyCode_t75B9ECCC26D858F55040DDFF9523681E996D17E9 
 {
@@ -1283,6 +1359,13 @@ struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5
 struct SpecialStartupMode_t872762964D80B3C1F6CE4024236A20D3D889AC44 
 {
 	// System.Int32 DG.Tweening.Core.Enums.SpecialStartupMode::value__
+	int32_t ___value___2;
+};
+
+// Stat
+struct Stat_t347C80C1BA9D0F03E87EA478FF9E0234B28F8505 
+{
+	// System.Int32 Stat::value__
 	int32_t ___value___2;
 };
 
@@ -2211,6 +2294,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Cur
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32Enum,System.Int32>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m2E03E419C7EAE999D440A625A0C6110AF2EB0F86_gshared (Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32Enum,System.Int32>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_mDDC87F07779BF25B3A4D29BE8B2C0992C42ADFDD_gshared (Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* __this, int32_t ___key0, int32_t ___value1, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.Dictionary`2<System.Int32Enum,System.Int32>::get_Item(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dictionary_2_get_Item_m978CAD767E166B6BD2E111732F513A1398B0B974_gshared (Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* __this, int32_t ___key0, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Int32>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // System.Void System.Func`2<System.Object,System.Boolean>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared (Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Where<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
@@ -2283,7 +2374,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762F
 // System.Int32 Pokemon::get_HP()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Pokemon_get_HP_m4DE7773C1D94288205D5B71344E375E141B4BB5C_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) ;
 // System.Int32 Pokemon::get_MaxHp()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) ;
 // System.Void HPBar::SetHP(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HPBar_SetHP_mB49E51F30458044766DAA92A4998AB5CEBDF1927 (HPBar_tDFF83FD4EEE89AF2415F39B07FE35849C9A18752* __this, float ___hpNormalized0, const RuntimeMethod* method) ;
 // System.Void BattleHud/<UpdateHP>d__5::.ctor(System.Int32)
@@ -2477,6 +2568,14 @@ inline PartyMemberUIU5BU5D_tC35F25330424E38EBA931819B7BD95612C329F46* Component_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PartyMemberUI_SetData_m8D74590DCB239DF8DE1F992B7560287A83D0DE59 (PartyMemberUI_tE9DE56120EC185D3981541FFDDF02B0615D9F503* __this, Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* ___pokemon0, const RuntimeMethod* method) ;
 // System.Void PartyMemberUI::SetSelected(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PartyMemberUI_SetSelected_mF2C5054AA4C487825BB47177F7D256B23AB273D4 (PartyMemberUI_tE9DE56120EC185D3981541FFDDF02B0615D9F503* __this, bool ___selected0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Transform::get_position()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Addition(UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m087D6F0EC60843D455F9F83D25FE42B2433AAD1D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) ;
 // System.Void System.Action::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
 // System.Void PlayerController::add_OnEncountered(System.Action)
@@ -2528,8 +2627,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector2_op_Inequality_mCF3935E28AC7B30B279F07F9321CC56718E1311A_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___lhs0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rhs1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Animator::SetFloat(System.String,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetFloat_m10C78733FAFC7AFEDBDACC48B7C66D3A35A0A7FE (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___name0, float ___value1, const RuntimeMethod* method) ;
-// UnityEngine.Vector3 UnityEngine.Transform::get_position()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Boolean PlayerController::IsWalkable(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayerController_IsWalkable_m31DFB0C8FF7AC7FEA80C61FE5FB934FC7EEF8A72 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___targetPos0, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator PlayerController::Move(UnityEngine.Vector3)
@@ -2550,8 +2647,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4D656395C27694A7F3
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::MoveTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_MoveTowards_m3E2E4E94093F49D09DEB34CA97BF8A632B27F1AD_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___current0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___target1, float ___maxDistanceDelta2, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_m1690F44F6DC92B770A940B6CF8AE0535625A9824_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::get_sqrMagnitude()
@@ -2562,8 +2657,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_CheckForEncounters_mB45
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Move_set_Base_m402F4713DAB0CBDA5516D7A7C60A23B0853DB081_inline (Move_t854202AD2D0D0CBADCAA68583489F1054C5BC0E4* __this, MoveBase_t657814A0376C9BE56B4B36F9CD05DC209BEA68AA* ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.ScriptableObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
-// System.Void Pokemon::set_HP(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___value0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Move>::.ctor()
 inline void List_1__ctor_m26DC47CF352B93AAF919007337677BD40C8B980F (List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* __this, const RuntimeMethod* method)
 {
@@ -2604,10 +2697,28 @@ inline bool Enumerator_MoveNext_mE6D9414141425BBAB17E5DB202DB2984E25A6347 (Enume
 {
 	return ((  bool (*) (Enumerator_t317981F90DEBF4F2036FE39C38E92EB512402D7B*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
+// System.Void Pokemon::CalculateStats()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_CalculateStats_mF266A52104A0869363383B4020DD28657E73F2C3 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) ;
+// System.Void Pokemon::set_HP(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<Stat,System.Int32>::.ctor()
+inline void Dictionary_2__ctor_m0FA39ECAE01EC2F1CD4F8C764C2967FEB39C901A (Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A*, const RuntimeMethod*))Dictionary_2__ctor_m2E03E419C7EAE999D440A625A0C6110AF2EB0F86_gshared)(__this, method);
+}
+// System.Void Pokemon::set_Stats(System.Collections.Generic.Dictionary`2<Stat,System.Int32>)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_Stats_mA6375ECB7477FF7FB9DD442BC76FF5F2E70A874E_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* ___value0, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2<Stat,System.Int32> Pokemon::get_Stats()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) ;
 // System.Int32 PokemonBase::GetAttack()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PokemonBase_GetAttack_m83C0E60CA05F509F567C69A95E348422C6FFFD90_inline (PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Mathf::FloorToInt(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline (float ___f0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<Stat,System.Int32>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1 (Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* __this, int32_t ___key0, int32_t ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A*, int32_t, int32_t, const RuntimeMethod*))Dictionary_2_Add_mDDC87F07779BF25B3A4D29BE8B2C0992C42ADFDD_gshared)(__this, ___key0, ___value1, method);
+}
 // System.Int32 PokemonBase::GetDefense()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PokemonBase_GetDefense_m409342ACFFC8293E7CA1A242972FAD2CABBDAF56_inline (PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* __this, const RuntimeMethod* method) ;
 // System.Int32 PokemonBase::GetSpAttack()
@@ -2618,6 +2729,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PokemonBase_GetSpDefense_
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PokemonBase_GetSpeed_m46C13F0714F1BC31DB2E9DAA94239EEDE9804E6B_inline (PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* __this, const RuntimeMethod* method) ;
 // System.Int32 PokemonBase::GetMaxHp()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PokemonBase_GetMaxHp_mE1765850C9E471B60EB756C3A5BB241D143D4558_inline (PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* __this, const RuntimeMethod* method) ;
+// System.Void Pokemon::set_MaxHp(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_MaxHp_mD30CF7FD5CADA3FD5584FC528189D30532AEC264_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.Dictionary`2<Stat,System.Int32>::get_Item(TKey)
+inline int32_t Dictionary_2_get_Item_m0C2AE999B277EA1A2DCDF384FBFF07792169FC45 (Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* __this, int32_t ___key0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A*, int32_t, const RuntimeMethod*))Dictionary_2_get_Item_m978CAD767E166B6BD2E111732F513A1398B0B974_gshared)(__this, ___key0, method);
+}
+// System.Int32 Pokemon::GetStat(Stat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___stat0, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Random::get_value()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_get_value_m87344B352E686178D743B14C468EEE01757E9D43 (const RuntimeMethod* method) ;
 // PokemonType PokemonBase::GetType1()
@@ -2665,6 +2785,13 @@ inline Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* Enumerator_get_Current
 {
 	return ((  Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* (*) (Enumerator_t49ED37A306FDBC4CE016119D3B90AC3A34454D15*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
 }
+// T System.Collections.Generic.List`1<System.Int32>::get_Item(System.Int32)
+inline int32_t List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_gshared)(__this, ___index0, method);
+}
+// System.Void Pokemon::setLevel(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_setLevel_m242BD4CFEE8DEA8F4D2650C7B419538BBF41D0D1_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___newLevel0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<Pokemon>::MoveNext()
 inline bool Enumerator_MoveNext_m9C8F27DB460F6D4C55C8D75D13ADB98BB00293E2 (Enumerator_t49ED37A306FDBC4CE016119D3B90AC3A34454D15* __this, const RuntimeMethod* method)
 {
@@ -2693,8 +2820,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector2_op_Equality_m5447BF12C18339431AB8AF02FA463C543D88D463_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___lhs0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rhs1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -3276,7 +3401,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BattleHud_SetData_m6B39F5F761FBDFD27CEC1
 		L_12 = Pokemon_get_HP_m4DE7773C1D94288205D5B71344E375E141B4BB5C_inline(L_11, NULL);
 		Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* L_13 = ___pokemon0;
 		int32_t L_14;
-		L_14 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1(L_13, NULL);
+		L_14 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1_inline(L_13, NULL);
 		HPBar_SetHP_mB49E51F30458044766DAA92A4998AB5CEBDF1927(L_10, ((float)(((float)L_12)/((float)L_14))), NULL);
 		// }
 		return;
@@ -3373,7 +3498,7 @@ IL_0017:
 		BattleHud_tB46A270265083A76124F7843E5FC9F1E21BAF89F* L_9 = V_1;
 		Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* L_10 = L_9->____pokemon_7;
 		int32_t L_11;
-		L_11 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1(L_10, NULL);
+		L_11 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1_inline(L_10, NULL);
 		RuntimeObject* L_12;
 		L_12 = HPBar_SetHPSmooth_m258E9C5397874FDD378665B697C0EC53786355D2(L_5, ((float)(((float)L_8)/((float)L_11))), NULL);
 		__this->___U3CU3E2__current_1 = L_12;
@@ -3736,7 +3861,7 @@ IL_001c:
 
 IL_0024:
 	{
-		// BattleOver(true);
+		// BattleOver(true); // the player won
 		BattleSystem_BattleOver_m8227734D2987E20E3121028FBD3EC22DBE408755(__this, (bool)1, NULL);
 		// }
 		return;
@@ -3901,7 +4026,7 @@ IL_006e:
 		L_12 = Input_GetKeyDown_m0D59B7EBC3A782C9FBBF107FBCD4B72B38D993B3(((int32_t)13), NULL);
 		if (!L_12)
 		{
-			goto IL_00cc;
+			goto IL_00d3;
 		}
 	}
 	{
@@ -3924,7 +4049,7 @@ IL_00aa:
 		int32_t L_14 = __this->___currentAction_10;
 		if ((((int32_t)L_14) == ((int32_t)1)))
 		{
-			goto IL_00cc;
+			goto IL_00d3;
 		}
 	}
 	{
@@ -3945,9 +4070,17 @@ IL_00c3:
 	{
 		// else if (currentAction == 3)
 		int32_t L_16 = __this->___currentAction_10;
+		if ((!(((uint32_t)L_16) == ((uint32_t)3))))
+		{
+			goto IL_00d3;
+		}
+	}
+	{
+		// BattleOver(true);
+		BattleSystem_BattleOver_m8227734D2987E20E3121028FBD3EC22DBE408755(__this, (bool)1, NULL);
 	}
 
-IL_00cc:
+IL_00d3:
 	{
 		// }
 		return;
@@ -4113,8 +4246,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BattleSystem_HandlePartyScreenSelection_
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mB7A26D4B8FF62F003F6E94F65A7828CF43B7EC1B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mC29CCDA4CF5ECCD01597B8831F8D2E6C637B8958_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral03EA7D5B54662E964A17D060B599BEA2F010F74D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral816C87324DAD0C65D7E5904F76CDA2D5107BB77C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD8FEB55828818F43F13EAFF8F21468BECEA3FBC);
 		s_Il2CppMethodInitialized = true;
 	}
 	Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* V_0 = NULL;
@@ -4247,9 +4380,9 @@ IL_00dd:
 		}
 	}
 	{
-		// partyScreen.SetMessageText("You can't swotch with the same pokemon");
+		// partyScreen.SetMessageText("You can't switch with the same pokemon");
 		PartyScreen_t9E1DFD2986DC2C0A4A060D0C8BB47BEFC64832AF* L_26 = __this->___partyScreen_7;
-		PartyScreen_SetMessageText_m2341AC666C65FF81F612EDF9A15024D4B9EBE377(L_26, _stringLiteral03EA7D5B54662E964A17D060B599BEA2F010F74D, NULL);
+		PartyScreen_SetMessageText_m2341AC666C65FF81F612EDF9A15024D4B9EBE377(L_26, _stringLiteralFD8FEB55828818F43F13EAFF8F21468BECEA3FBC, NULL);
 		// return; //si pokemon HP<=0
 		return;
 	}
@@ -5989,7 +6122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PartyMemberUI_SetData_m8D74590DCB239DF8D
 		L_12 = Pokemon_get_HP_m4DE7773C1D94288205D5B71344E375E141B4BB5C_inline(L_11, NULL);
 		Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* L_13 = ___pokemon0;
 		int32_t L_14;
-		L_14 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1(L_13, NULL);
+		L_14 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1_inline(L_13, NULL);
 		HPBar_SetHP_mB49E51F30458044766DAA92A4998AB5CEBDF1927(L_10, ((float)(((float)L_12)/((float)L_14))), NULL);
 		// }
 		return;
@@ -6251,6 +6384,66 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PartyScreen__ctor_m26FCDE97CF6ACA5A99340
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void GameController::playerInitializePosition()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameController_playerInitializePosition_mE1C469536E522E5689594112D08C1509C2D83A78 (GameController_tDA619EE453F7ED2C8297EF928518A0B447E44D09* __this, const RuntimeMethod* method) 
+{
+	{
+		// playerController.transform.position = new Vector3(0, 0, 0);
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_0 = __this->___playerController_4;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		memset((&L_2), 0, sizeof(L_2));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_2), (0.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void GameController::playerSetPositionX(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameController_playerSetPositionX_m20DE426B5D22C4F7876B5DE71A20D044F80DDFA0 (GameController_tDA619EE453F7ED2C8297EF928518A0B447E44D09* __this, int32_t ___pos0, const RuntimeMethod* method) 
+{
+	{
+		// playerController.transform.position += new Vector3(pos, 0, 0);
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_0 = __this->___playerController_4;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = L_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		int32_t L_4 = ___pos0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		memset((&L_5), 0, sizeof(L_5));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_5), ((float)L_4), (0.0f), (0.0f), /*hidden argument*/NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector3_op_Addition_m087D6F0EC60843D455F9F83D25FE42B2433AAD1D_inline(L_3, L_5, NULL);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_2, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void GameController::playerSetPositionY(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameController_playerSetPositionY_m8DBD44384E3EDD396E364568244092C5CC3FDDC7 (GameController_tDA619EE453F7ED2C8297EF928518A0B447E44D09* __this, int32_t ___pos0, const RuntimeMethod* method) 
+{
+	{
+		// playerController.transform.position += new Vector3(0, pos, 0);
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_0 = __this->___playerController_4;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = L_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		int32_t L_4 = ___pos0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		memset((&L_5), 0, sizeof(L_5));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_5), (0.0f), ((float)L_4), (0.0f), /*hidden argument*/NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector3_op_Addition_m087D6F0EC60843D455F9F83D25FE42B2433AAD1D_inline(L_3, L_5, NULL);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_2, L_6, NULL);
+		// }
+		return;
+	}
+}
 // System.Void GameController::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameController_Start_mD0C79B8B5B5D8EDC88F7F2F88B5954B1342198EF (GameController_tDA619EE453F7ED2C8297EF928518A0B447E44D09* __this, const RuntimeMethod* method) 
 {
@@ -7179,6 +7372,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_Level_m299E799D4F8C206784
 		return L_0;
 	}
 }
+// System.Void Pokemon::setLevel(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_setLevel_m242BD4CFEE8DEA8F4D2650C7B419538BBF41D0D1 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___newLevel0, const RuntimeMethod* method) 
+{
+	{
+		// level=newLevel;
+		int32_t L_0 = ___newLevel0;
+		__this->___level_1 = L_0;
+		// }
+		return;
+	}
+}
 // System.Int32 Pokemon::get_HP()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_HP_m4DE7773C1D94288205D5B71344E375E141B4BB5C (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
@@ -7218,6 +7422,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_set_Moves_mA886CAEABAF3C718E40A3
 		return;
 	}
 }
+// System.Collections.Generic.Dictionary`2<Stat,System.Int32> Pokemon::get_Stats()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<Stat,int> Stats {get; private set;}
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_0 = __this->___U3CStatsU3Ek__BackingField_4;
+		return L_0;
+	}
+}
+// System.Void Pokemon::set_Stats(System.Collections.Generic.Dictionary`2<Stat,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_set_Stats_mA6375ECB7477FF7FB9DD442BC76FF5F2E70A874E (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<Stat,int> Stats {get; private set;}
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_0 = ___value0;
+		__this->___U3CStatsU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CStatsU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
 // System.Void Pokemon::Init()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_Init_m9DDEC73AEC4D633BA4B425546D9BFAAC23A2EE5D (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
@@ -7239,28 +7463,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_Init_m9DDEC73AEC4D633BA4B425546D
 	memset((&V_0), 0, sizeof(V_0));
 	LearnableMove_tE13610CF83B093C74F7EB2E85CDE67B80A31F0BB* V_1 = NULL;
 	{
-		// HP=MaxHp;
-		int32_t L_0;
-		L_0 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1(__this, NULL);
-		Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411_inline(__this, L_0, NULL);
 		// Moves= new List<Move>();
-		List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* L_1 = (List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2*)il2cpp_codegen_object_new(List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2_il2cpp_TypeInfo_var);
-		List_1__ctor_m26DC47CF352B93AAF919007337677BD40C8B980F(L_1, List_1__ctor_m26DC47CF352B93AAF919007337677BD40C8B980F_RuntimeMethod_var);
-		Pokemon_set_Moves_mA886CAEABAF3C718E40A3E264D5070E6E68FBF82_inline(__this, L_1, NULL);
+		List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* L_0 = (List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2*)il2cpp_codegen_object_new(List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2_il2cpp_TypeInfo_var);
+		List_1__ctor_m26DC47CF352B93AAF919007337677BD40C8B980F(L_0, List_1__ctor_m26DC47CF352B93AAF919007337677BD40C8B980F_RuntimeMethod_var);
+		Pokemon_set_Moves_mA886CAEABAF3C718E40A3E264D5070E6E68FBF82_inline(__this, L_0, NULL);
 		// foreach (var move in Base.GetLearnableMoves())
-		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_2;
-		L_2 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
-		List_1_tF7B7F582819942138622D763F715A4CFCAC46E7C* L_3;
-		L_3 = PokemonBase_GetLearnableMoves_m340CC644A33384FB25E792157A9C48633A29F944_inline(L_2, NULL);
-		Enumerator_t317981F90DEBF4F2036FE39C38E92EB512402D7B L_4;
-		L_4 = List_1_GetEnumerator_m98E1693444712BC5562D3BA86BA18937EDF31464(L_3, List_1_GetEnumerator_m98E1693444712BC5562D3BA86BA18937EDF31464_RuntimeMethod_var);
-		V_0 = L_4;
+		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_1;
+		L_1 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
+		List_1_tF7B7F582819942138622D763F715A4CFCAC46E7C* L_2;
+		L_2 = PokemonBase_GetLearnableMoves_m340CC644A33384FB25E792157A9C48633A29F944_inline(L_1, NULL);
+		Enumerator_t317981F90DEBF4F2036FE39C38E92EB512402D7B L_3;
+		L_3 = List_1_GetEnumerator_m98E1693444712BC5562D3BA86BA18937EDF31464(L_2, List_1_GetEnumerator_m98E1693444712BC5562D3BA86BA18937EDF31464_RuntimeMethod_var);
+		V_0 = L_3;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0071:
+FINALLY_0065:
 			{// begin finally (depth: 1)
 				Enumerator_Dispose_m6E1097A0ACAC70E340FAB674B267EB1E67EDB371((&V_0), Enumerator_Dispose_m6E1097A0ACAC70E340FAB674B267EB1E67EDB371_RuntimeMethod_var);
 				return;
@@ -7269,67 +7489,67 @@ FINALLY_0071:
 		try
 		{// begin try (depth: 1)
 			{
-				goto IL_0066_1;
+				goto IL_005a_1;
 			}
 
-IL_002a_1:
+IL_001e_1:
 			{
 				// foreach (var move in Base.GetLearnableMoves())
-				LearnableMove_tE13610CF83B093C74F7EB2E85CDE67B80A31F0BB* L_5;
-				L_5 = Enumerator_get_Current_m45D1AF2AE377D4E3720C6282006ABF88257D32F4_inline((&V_0), Enumerator_get_Current_m45D1AF2AE377D4E3720C6282006ABF88257D32F4_RuntimeMethod_var);
-				V_1 = L_5;
+				LearnableMove_tE13610CF83B093C74F7EB2E85CDE67B80A31F0BB* L_4;
+				L_4 = Enumerator_get_Current_m45D1AF2AE377D4E3720C6282006ABF88257D32F4_inline((&V_0), Enumerator_get_Current_m45D1AF2AE377D4E3720C6282006ABF88257D32F4_RuntimeMethod_var);
+				V_1 = L_4;
 				// if(move.GetLevel()<=Level)
-				LearnableMove_tE13610CF83B093C74F7EB2E85CDE67B80A31F0BB* L_6 = V_1;
+				LearnableMove_tE13610CF83B093C74F7EB2E85CDE67B80A31F0BB* L_5 = V_1;
+				int32_t L_6;
+				L_6 = LearnableMove_GetLevel_mB7B88845EB00FEDA4C641C98718C692295965489_inline(L_5, NULL);
 				int32_t L_7;
-				L_7 = LearnableMove_GetLevel_mB7B88845EB00FEDA4C641C98718C692295965489_inline(L_6, NULL);
-				int32_t L_8;
-				L_8 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
-				if ((((int32_t)L_7) > ((int32_t)L_8)))
+				L_7 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
+				if ((((int32_t)L_6) > ((int32_t)L_7)))
 				{
-					goto IL_0056_1;
+					goto IL_004a_1;
 				}
 			}
 			{
 				// Moves.Add(new Move(move.GetBase()));
-				List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* L_9;
-				L_9 = Pokemon_get_Moves_m62AF86EE0DACB229DE7C6CA5570F377E67B63F9E_inline(__this, NULL);
-				LearnableMove_tE13610CF83B093C74F7EB2E85CDE67B80A31F0BB* L_10 = V_1;
-				MoveBase_t657814A0376C9BE56B4B36F9CD05DC209BEA68AA* L_11;
-				L_11 = LearnableMove_GetBase_mABD2FB86D7ACFD1D42D3F1B0E1C07A455EFD97BC_inline(L_10, NULL);
-				Move_t854202AD2D0D0CBADCAA68583489F1054C5BC0E4* L_12 = (Move_t854202AD2D0D0CBADCAA68583489F1054C5BC0E4*)il2cpp_codegen_object_new(Move_t854202AD2D0D0CBADCAA68583489F1054C5BC0E4_il2cpp_TypeInfo_var);
-				Move__ctor_m88D4D42F5689C3EADC300FD1EBBC4A91BACD7CC5(L_12, L_11, NULL);
-				List_1_Add_m811A7B6126C3CCADF6FDE5E6A089271D9ADCC653_inline(L_9, L_12, List_1_Add_m811A7B6126C3CCADF6FDE5E6A089271D9ADCC653_RuntimeMethod_var);
+				List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* L_8;
+				L_8 = Pokemon_get_Moves_m62AF86EE0DACB229DE7C6CA5570F377E67B63F9E_inline(__this, NULL);
+				LearnableMove_tE13610CF83B093C74F7EB2E85CDE67B80A31F0BB* L_9 = V_1;
+				MoveBase_t657814A0376C9BE56B4B36F9CD05DC209BEA68AA* L_10;
+				L_10 = LearnableMove_GetBase_mABD2FB86D7ACFD1D42D3F1B0E1C07A455EFD97BC_inline(L_9, NULL);
+				Move_t854202AD2D0D0CBADCAA68583489F1054C5BC0E4* L_11 = (Move_t854202AD2D0D0CBADCAA68583489F1054C5BC0E4*)il2cpp_codegen_object_new(Move_t854202AD2D0D0CBADCAA68583489F1054C5BC0E4_il2cpp_TypeInfo_var);
+				Move__ctor_m88D4D42F5689C3EADC300FD1EBBC4A91BACD7CC5(L_11, L_10, NULL);
+				List_1_Add_m811A7B6126C3CCADF6FDE5E6A089271D9ADCC653_inline(L_8, L_11, List_1_Add_m811A7B6126C3CCADF6FDE5E6A089271D9ADCC653_RuntimeMethod_var);
 			}
 
-IL_0056_1:
+IL_004a_1:
 			{
 				// if(Moves.Count>=4)
-				List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* L_13;
-				L_13 = Pokemon_get_Moves_m62AF86EE0DACB229DE7C6CA5570F377E67B63F9E_inline(__this, NULL);
-				int32_t L_14;
-				L_14 = List_1_get_Count_m00434EF00D46B5289796D96E566801DF992FA9C7_inline(L_13, List_1_get_Count_m00434EF00D46B5289796D96E566801DF992FA9C7_RuntimeMethod_var);
-				if ((((int32_t)L_14) < ((int32_t)4)))
+				List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* L_12;
+				L_12 = Pokemon_get_Moves_m62AF86EE0DACB229DE7C6CA5570F377E67B63F9E_inline(__this, NULL);
+				int32_t L_13;
+				L_13 = List_1_get_Count_m00434EF00D46B5289796D96E566801DF992FA9C7_inline(L_12, List_1_get_Count_m00434EF00D46B5289796D96E566801DF992FA9C7_RuntimeMethod_var);
+				if ((((int32_t)L_13) < ((int32_t)4)))
 				{
-					goto IL_0066_1;
+					goto IL_005a_1;
 				}
 			}
 			{
 				// break;
-				goto IL_007f;
+				goto IL_0073;
 			}
 
-IL_0066_1:
+IL_005a_1:
 			{
 				// foreach (var move in Base.GetLearnableMoves())
-				bool L_15;
-				L_15 = Enumerator_MoveNext_mE6D9414141425BBAB17E5DB202DB2984E25A6347((&V_0), Enumerator_MoveNext_mE6D9414141425BBAB17E5DB202DB2984E25A6347_RuntimeMethod_var);
-				if (L_15)
+				bool L_14;
+				L_14 = Enumerator_MoveNext_mE6D9414141425BBAB17E5DB202DB2984E25A6347((&V_0), Enumerator_MoveNext_mE6D9414141425BBAB17E5DB202DB2984E25A6347_RuntimeMethod_var);
+				if (L_14)
 				{
-					goto IL_002a_1;
+					goto IL_001e_1;
 				}
 			}
 			{
-				goto IL_007f;
+				goto IL_0073;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -7338,106 +7558,195 @@ IL_0066_1:
 		}
 	}
 
-IL_007f:
+IL_0073:
 	{
+		// CalculateStats();
+		Pokemon_CalculateStats_mF266A52104A0869363383B4020DD28657E73F2C3(__this, NULL);
+		// HP=MaxHp;
+		int32_t L_15;
+		L_15 = Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1_inline(__this, NULL);
+		Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411_inline(__this, L_15, NULL);
 		// }
 		return;
+	}
+}
+// System.Void Pokemon::CalculateStats()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_CalculateStats_mF266A52104A0869363383B4020DD28657E73F2C3 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m0FA39ECAE01EC2F1CD4F8C764C2967FEB39C901A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Stats= new Dictionary<Stat, int>();
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_0 = (Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A*)il2cpp_codegen_object_new(Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m0FA39ECAE01EC2F1CD4F8C764C2967FEB39C901A(L_0, Dictionary_2__ctor_m0FA39ECAE01EC2F1CD4F8C764C2967FEB39C901A_RuntimeMethod_var);
+		Pokemon_set_Stats_mA6375ECB7477FF7FB9DD442BC76FF5F2E70A874E_inline(__this, L_0, NULL);
+		// Stats.Add(Stat.Attack,Mathf.FloorToInt((Base.GetAttack()*Level)/100f)+5);
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_1;
+		L_1 = Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline(__this, NULL);
+		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_2;
+		L_2 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
+		int32_t L_3;
+		L_3 = PokemonBase_GetAttack_m83C0E60CA05F509F567C69A95E348422C6FFFD90_inline(L_2, NULL);
+		int32_t L_4;
+		L_4 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
+		int32_t L_5;
+		L_5 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_3, L_4)))/(100.0f))), NULL);
+		Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1(L_1, 0, ((int32_t)il2cpp_codegen_add(L_5, 5)), Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1_RuntimeMethod_var);
+		// Stats.Add(Stat.Defense,Mathf.FloorToInt((Base.GetDefense()*Level)/100f)+5);
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_6;
+		L_6 = Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline(__this, NULL);
+		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_7;
+		L_7 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
+		int32_t L_8;
+		L_8 = PokemonBase_GetDefense_m409342ACFFC8293E7CA1A242972FAD2CABBDAF56_inline(L_7, NULL);
+		int32_t L_9;
+		L_9 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
+		int32_t L_10;
+		L_10 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_8, L_9)))/(100.0f))), NULL);
+		Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1(L_6, 1, ((int32_t)il2cpp_codegen_add(L_10, 5)), Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1_RuntimeMethod_var);
+		// Stats.Add(Stat.SpAttack,Mathf.FloorToInt((Base.GetSpAttack()*Level)/100f)+5);
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_11;
+		L_11 = Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline(__this, NULL);
+		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_12;
+		L_12 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
+		int32_t L_13;
+		L_13 = PokemonBase_GetSpAttack_m5D3D823FA015F1CBD5CDDD9A1DAFBF5E11ECBA2E_inline(L_12, NULL);
+		int32_t L_14;
+		L_14 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
+		int32_t L_15;
+		L_15 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_13, L_14)))/(100.0f))), NULL);
+		Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1(L_11, 2, ((int32_t)il2cpp_codegen_add(L_15, 5)), Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1_RuntimeMethod_var);
+		// Stats.Add(Stat.SpDefense,Mathf.FloorToInt((Base.GetSpDefense()*Level)/100f)+5);
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_16;
+		L_16 = Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline(__this, NULL);
+		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_17;
+		L_17 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
+		int32_t L_18;
+		L_18 = PokemonBase_GetSpDefense_m12768501E8D5644DFF9EB8F400A63D4FA70D77A5_inline(L_17, NULL);
+		int32_t L_19;
+		L_19 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
+		int32_t L_20;
+		L_20 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_18, L_19)))/(100.0f))), NULL);
+		Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1(L_16, 3, ((int32_t)il2cpp_codegen_add(L_20, 5)), Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1_RuntimeMethod_var);
+		// Stats.Add(Stat.Speed,Mathf.FloorToInt((Base.GetSpeed()*Level)/100f)+5);
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_21;
+		L_21 = Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline(__this, NULL);
+		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_22;
+		L_22 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
+		int32_t L_23;
+		L_23 = PokemonBase_GetSpeed_m46C13F0714F1BC31DB2E9DAA94239EEDE9804E6B_inline(L_22, NULL);
+		int32_t L_24;
+		L_24 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
+		int32_t L_25;
+		L_25 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_23, L_24)))/(100.0f))), NULL);
+		Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1(L_21, 4, ((int32_t)il2cpp_codegen_add(L_25, 5)), Dictionary_2_Add_m3B5B6A1E2743557941CC2D365A0D1B76134C5BA1_RuntimeMethod_var);
+		// MaxHp=Mathf.FloorToInt((Base.GetMaxHp()*Level)/100f)+10;
+		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_26;
+		L_26 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
+		int32_t L_27;
+		L_27 = PokemonBase_GetMaxHp_mE1765850C9E471B60EB756C3A5BB241D143D4558_inline(L_26, NULL);
+		int32_t L_28;
+		L_28 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
+		int32_t L_29;
+		L_29 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_27, L_28)))/(100.0f))), NULL);
+		Pokemon_set_MaxHp_mD30CF7FD5CADA3FD5584FC528189D30532AEC264_inline(__this, ((int32_t)il2cpp_codegen_add(L_29, ((int32_t)10))), NULL);
+		// }
+		return;
+	}
+}
+// System.Int32 Pokemon::GetStat(Stat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___stat0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m0C2AE999B277EA1A2DCDF384FBFF07792169FC45_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// int statVal= Stats[stat];
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_0;
+		L_0 = Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline(__this, NULL);
+		int32_t L_1 = ___stat0;
+		int32_t L_2;
+		L_2 = Dictionary_2_get_Item_m0C2AE999B277EA1A2DCDF384FBFF07792169FC45(L_0, L_1, Dictionary_2_get_Item_m0C2AE999B277EA1A2DCDF384FBFF07792169FC45_RuntimeMethod_var);
+		// return statVal;
+		return L_2;
 	}
 }
 // System.Int32 Pokemon::get_Attack()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_Attack_m020EFC197279FC83920F74F4CEEBBD0AE7BAE941 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
 	{
-		// get{return Mathf.FloorToInt((Base.GetAttack()*Level)/100f)+5;}
-		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_0;
-		L_0 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
-		int32_t L_1;
-		L_1 = PokemonBase_GetAttack_m83C0E60CA05F509F567C69A95E348422C6FFFD90_inline(L_0, NULL);
-		int32_t L_2;
-		L_2 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
-		int32_t L_3;
-		L_3 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_1, L_2)))/(100.0f))), NULL);
-		return ((int32_t)il2cpp_codegen_add(L_3, 5));
+		// get{return GetStat(Stat.Attack);}
+		int32_t L_0;
+		L_0 = Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48(__this, 0, NULL);
+		return L_0;
 	}
 }
 // System.Int32 Pokemon::get_Defense()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_Defense_m39FB5603123DBEBDEA31A6C5AF7355B5198B9CB7 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
 	{
-		// get{return Mathf.FloorToInt((Base.GetDefense()*Level)/100f)+5;}
-		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_0;
-		L_0 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
-		int32_t L_1;
-		L_1 = PokemonBase_GetDefense_m409342ACFFC8293E7CA1A242972FAD2CABBDAF56_inline(L_0, NULL);
-		int32_t L_2;
-		L_2 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
-		int32_t L_3;
-		L_3 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_1, L_2)))/(100.0f))), NULL);
-		return ((int32_t)il2cpp_codegen_add(L_3, 5));
+		// get{return GetStat(Stat.Defense);}
+		int32_t L_0;
+		L_0 = Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48(__this, 1, NULL);
+		return L_0;
 	}
 }
 // System.Int32 Pokemon::get_SpAttack()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_SpAttack_mFC04B4BBC1747EF09A5BD85E765F0408490F586B (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
 	{
-		// get{return Mathf.FloorToInt((Base.GetSpAttack()*Level)/100f)+5;}
-		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_0;
-		L_0 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
-		int32_t L_1;
-		L_1 = PokemonBase_GetSpAttack_m5D3D823FA015F1CBD5CDDD9A1DAFBF5E11ECBA2E_inline(L_0, NULL);
-		int32_t L_2;
-		L_2 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
-		int32_t L_3;
-		L_3 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_1, L_2)))/(100.0f))), NULL);
-		return ((int32_t)il2cpp_codegen_add(L_3, 5));
+		// get{return GetStat(Stat.SpAttack);}
+		int32_t L_0;
+		L_0 = Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48(__this, 2, NULL);
+		return L_0;
 	}
 }
 // System.Int32 Pokemon::get_SpDefense()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_SpDefense_m096B9F479778869772EB5782B88CFC9099F0FD51 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
 	{
-		// get{return Mathf.FloorToInt((Base.GetSpDefense()*Level)/100f)+5;}
-		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_0;
-		L_0 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
-		int32_t L_1;
-		L_1 = PokemonBase_GetSpDefense_m12768501E8D5644DFF9EB8F400A63D4FA70D77A5_inline(L_0, NULL);
-		int32_t L_2;
-		L_2 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
-		int32_t L_3;
-		L_3 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_1, L_2)))/(100.0f))), NULL);
-		return ((int32_t)il2cpp_codegen_add(L_3, 5));
+		// get{return GetStat(Stat.SpDefense);}
+		int32_t L_0;
+		L_0 = Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48(__this, 3, NULL);
+		return L_0;
 	}
 }
 // System.Int32 Pokemon::get_Speed()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_Speed_m26A92E7C1806F4AAD62EBA8FED1C4759CEA7EB7A (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
 	{
-		// get{return Mathf.FloorToInt((Base.GetSpeed()*Level)/100f)+5;}
-		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_0;
-		L_0 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
-		int32_t L_1;
-		L_1 = PokemonBase_GetSpeed_m46C13F0714F1BC31DB2E9DAA94239EEDE9804E6B_inline(L_0, NULL);
-		int32_t L_2;
-		L_2 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
-		int32_t L_3;
-		L_3 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_1, L_2)))/(100.0f))), NULL);
-		return ((int32_t)il2cpp_codegen_add(L_3, 5));
+		// get{return GetStat(Stat.Speed);}
+		int32_t L_0;
+		L_0 = Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48(__this, 4, NULL);
+		return L_0;
 	}
 }
 // System.Int32 Pokemon::get_MaxHp()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
 {
 	{
-		// get{return Mathf.FloorToInt((Base.GetMaxHp()*Level)/100f)+10;}
-		PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* L_0;
-		L_0 = Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF_inline(__this, NULL);
-		int32_t L_1;
-		L_1 = PokemonBase_GetMaxHp_mE1765850C9E471B60EB756C3A5BB241D143D4558_inline(L_0, NULL);
-		int32_t L_2;
-		L_2 = Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154_inline(__this, NULL);
-		int32_t L_3;
-		L_3 = Mathf_FloorToInt_mD086E41305DD8350180AD677833A22733B4789A9_inline(((float)(((float)((int32_t)il2cpp_codegen_multiply(L_1, L_2)))/(100.0f))), NULL);
-		return ((int32_t)il2cpp_codegen_add(L_3, ((int32_t)10)));
+		// public int MaxHp{get;private set;}
+		int32_t L_0 = __this->___U3CMaxHpU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+// System.Void Pokemon::set_MaxHp(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pokemon_set_MaxHp_mD30CF7FD5CADA3FD5584FC528189D30532AEC264 (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public int MaxHp{get;private set;}
+		int32_t L_0 = ___value0;
+		__this->___U3CMaxHpU3Ek__BackingField_5 = L_0;
+		return;
 	}
 }
 // DamageDetails Pokemon::TakeDamage(Move,Pokemon)
@@ -7921,6 +8230,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LearnableMove__ctor_mB14F3224AFC5B761ABD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Single TypeChart::GetEffectiveness(PokemonType,PokemonType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TypeChart_GetEffectiveness_mAF877967F18DEE0D17B220097D0FFBD972257353 (int32_t ___attackType0, int32_t ___defenseType1, const RuntimeMethod* method) 
 {
@@ -8074,6 +8391,92 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t9476881D3FCE7BBEC4503EA87DC645720F476
 		return L_0;
 	}
 }
+// System.Void PokemonParty::UpdateLevel(System.Collections.Generic.List`1<System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokemonParty_UpdateLevel_m75249AD1E6C401972F3443423BFF1950DFD7C860 (PokemonParty_tF235BC2682C3274A4B48E7CB77095A663B0A2612* __this, List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___levels0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mEA6F9BB900A310461DFE12523C76CE2D9BD3C992_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m9C8F27DB460F6D4C55C8D75D13ADB98BB00293E2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m53CB2727A2A25764E2B6401D0881F25168A05904_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m2BD07658515263273164CE558DF0E785AD171533_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Enumerator_t49ED37A306FDBC4CE016119D3B90AC3A34454D15 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// int i=0;
+		V_0 = 0;
+		// foreach(var pokemon in pokemons){
+		List_1_t9476881D3FCE7BBEC4503EA87DC645720F4769CA* L_0 = __this->___pokemons_4;
+		Enumerator_t49ED37A306FDBC4CE016119D3B90AC3A34454D15 L_1;
+		L_1 = List_1_GetEnumerator_m2BD07658515263273164CE558DF0E785AD171533(L_0, List_1_GetEnumerator_m2BD07658515263273164CE558DF0E785AD171533_RuntimeMethod_var);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0038:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mEA6F9BB900A310461DFE12523C76CE2D9BD3C992((&V_1), Enumerator_Dispose_mEA6F9BB900A310461DFE12523C76CE2D9BD3C992_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002d_1;
+			}
+
+IL_0010_1:
+			{
+				// foreach(var pokemon in pokemons){
+				Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* L_2;
+				L_2 = Enumerator_get_Current_m53CB2727A2A25764E2B6401D0881F25168A05904_inline((&V_1), Enumerator_get_Current_m53CB2727A2A25764E2B6401D0881F25168A05904_RuntimeMethod_var);
+				// pokemon.setLevel(levels[i]);
+				Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* L_3 = L_2;
+				List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_4 = ___levels0;
+				int32_t L_5 = V_0;
+				int32_t L_6;
+				L_6 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_4, L_5, List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
+				Pokemon_setLevel_m242BD4CFEE8DEA8F4D2650C7B419538BBF41D0D1_inline(L_3, L_6, NULL);
+				// pokemon.Init();
+				Pokemon_Init_m9DDEC73AEC4D633BA4B425546D9BFAAC23A2EE5D(L_3, NULL);
+				// i+=1;
+				int32_t L_7 = V_0;
+				V_0 = ((int32_t)il2cpp_codegen_add(L_7, 1));
+			}
+
+IL_002d_1:
+			{
+				// foreach(var pokemon in pokemons){
+				bool L_8;
+				L_8 = Enumerator_MoveNext_m9C8F27DB460F6D4C55C8D75D13ADB98BB00293E2((&V_1), Enumerator_MoveNext_m9C8F27DB460F6D4C55C8D75D13ADB98BB00293E2_RuntimeMethod_var);
+				if (L_8)
+				{
+					goto IL_0010_1;
+				}
+			}
+			{
+				goto IL_0046;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0046:
+	{
+		// }
+		return;
+	}
+}
 // System.Void PokemonParty::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokemonParty_Start_m30774AE71368F0B59975D61AC1A3DA4417EF81A5 (PokemonParty_tF235BC2682C3274A4B48E7CB77095A663B0A2612* __this, const RuntimeMethod* method) 
 {
@@ -8155,7 +8558,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_FirstOrDefault_TisPokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588_m7DC3C1CA61234E5B5DEDC40530526D1759138C51_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Where_TisPokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588_mE31BFA0197803615F678DA2E4F6F0C9B315187CA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CGetHealthyPokemonU3Eb__4_0_m788527D417CD19D292C94CE8E0CC8BA2327C29FE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CGetHealthyPokemonU3Eb__5_0_m51A49AC449D85338ECAF78A4B61A1A943E580B83_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -8167,7 +8570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552
 		// return pokemons.Where(x=>x.HP>0).FirstOrDefault();//return le premier pokemon avec HP>0
 		List_1_t9476881D3FCE7BBEC4503EA87DC645720F4769CA* L_0 = __this->___pokemons_4;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var);
-		Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18* L_1 = ((U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var))->___U3CU3E9__4_0_1;
+		Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18* L_1 = ((U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var))->___U3CU3E9__5_0_1;
 		Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18* L_2 = L_1;
 		G_B1_0 = L_2;
 		G_B1_1 = L_0;
@@ -8182,10 +8585,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var);
 		U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B* L_3 = ((U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var))->___U3CU3E9_0;
 		Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18* L_4 = (Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18*)il2cpp_codegen_object_new(Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18_il2cpp_TypeInfo_var);
-		Func_2__ctor_mDC95C542328C7749EE094EA7DD5A350DE3EE135F(L_4, L_3, (intptr_t)((void*)U3CU3Ec_U3CGetHealthyPokemonU3Eb__4_0_m788527D417CD19D292C94CE8E0CC8BA2327C29FE_RuntimeMethod_var), NULL);
+		Func_2__ctor_mDC95C542328C7749EE094EA7DD5A350DE3EE135F(L_4, L_3, (intptr_t)((void*)U3CU3Ec_U3CGetHealthyPokemonU3Eb__5_0_m51A49AC449D85338ECAF78A4B61A1A943E580B83_RuntimeMethod_var), NULL);
 		Func_2_t83DDC17A1C5B20F86028979B0A7A791B18A1DC18* L_5 = L_4;
-		((U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var))->___U3CU3E9__4_0_1 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var))->___U3CU3E9__4_0_1), (void*)L_5);
+		((U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var))->___U3CU3E9__5_0_1 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B_il2cpp_TypeInfo_var))->___U3CU3E9__5_0_1), (void*)L_5);
 		G_B2_0 = L_5;
 		G_B2_1 = G_B1_1;
 	}
@@ -8240,8 +8643,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m71FB2EE8D85DE9B5DAFB7A921
 		return;
 	}
 }
-// System.Boolean PokemonParty/<>c::<GetHealthyPokemon>b__4_0(Pokemon)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CGetHealthyPokemonU3Eb__4_0_m788527D417CD19D292C94CE8E0CC8BA2327C29FE (U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B* __this, Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* ___x0, const RuntimeMethod* method) 
+// System.Boolean PokemonParty/<>c::<GetHealthyPokemon>b__5_0(Pokemon)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CGetHealthyPokemonU3Eb__5_0_m51A49AC449D85338ECAF78A4B61A1A943E580B83 (U3CU3Ec_tAA14BC8FBEF6080379FCD169D1A79C49F2FEF05B* __this, Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* ___x0, const RuntimeMethod* method) 
 {
 	{
 		// return pokemons.Where(x=>x.HP>0).FirstOrDefault();//return le premier pokemon avec HP>0
@@ -8341,6 +8744,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Pokemon_get_HP_m4DE7773C1
 	{
 		// public int HP {get; set;} //current HP of the pokemon
 		int32_t L_0 = __this->___U3CHPU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int MaxHp{get;private set;}
+		int32_t L_0 = __this->___U3CMaxHpU3Ek__BackingField_5;
 		return L_0;
 	}
 }
@@ -8520,6 +8931,48 @@ IL_001d:
 	{
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
 		return L_1;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___x0;
+		__this->___x_2 = L_0;
+		float L_1 = ___y1;
+		__this->___y_3 = L_1;
+		float L_2 = ___z2;
+		__this->___z_4 = L_2;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m087D6F0EC60843D455F9F83D25FE42B2433AAD1D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a0;
+		float L_1 = L_0.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___b1;
+		float L_3 = L_2.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___a0;
+		float L_5 = L_4.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___b1;
+		float L_7 = L_6.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___a0;
+		float L_9 = L_8.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___b1;
+		float L_11 = L_10.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), ((float)il2cpp_codegen_add(L_1, L_3)), ((float)il2cpp_codegen_add(L_5, L_7)), ((float)il2cpp_codegen_add(L_9, L_11)), /*hidden argument*/NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m009B92B5D35AB02BD1610C2E1ACCE7C9CF964A6E_inline (const RuntimeMethod* method) 
@@ -8777,15 +9230,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Move_set_Base_m402F4713DAB0C
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___value0, const RuntimeMethod* method) 
-{
-	{
-		// public int HP {get; set;} //current HP of the pokemon
-		int32_t L_0 = ___value0;
-		__this->___U3CHPU3Ek__BackingField_2 = L_0;
-		return;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_Moves_mA886CAEABAF3C718E40A3E264D5070E6E68FBF82_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, List_1_tBB8F1D2258F2B54198AF941982E13B7BA97D93D2* ___value0, const RuntimeMethod* method) 
 {
 	{
@@ -8817,6 +9261,33 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MoveBase_t657814A0376C9BE56B4B36F
 	{
 		// return moveBase;
 		MoveBase_t657814A0376C9BE56B4B36F9CD05DC209BEA68AA* L_0 = __this->___moveBase_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public int HP {get; set;} //current HP of the pokemon
+		int32_t L_0 = ___value0;
+		__this->___U3CHPU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_Stats_mA6375ECB7477FF7FB9DD442BC76FF5F2E70A874E_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<Stat,int> Stats {get; private set;}
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_0 = ___value0;
+		__this->___U3CStatsU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CStatsU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<Stat,int> Stats {get; private set;}
+		Dictionary_2_tE679F3B3CA59B375F27179F38CDAE4D2C23D4D2A* L_0 = __this->___U3CStatsU3Ek__BackingField_4;
 		return L_0;
 	}
 }
@@ -8892,6 +9363,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PokemonBase_GetMaxHp_mE17
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_set_MaxHp_mD30CF7FD5CADA3FD5584FC528189D30532AEC264_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public int MaxHp{get;private set;}
+		int32_t L_0 = ___value0;
+		__this->___U3CMaxHpU3Ek__BackingField_5 = L_0;
+		return;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PokemonBase_GetType1_m471E50E8B90B018D32BAA39A5DBDFE2B8EDC0CB6_inline (PokemonBase_tBE0034E87B8410A7F945B72698EB06FD0BD22D4B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8941,6 +9421,16 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t MoveBase_GetPower_m573EC5
 		// return power;
 		int32_t L_0 = __this->___power_7;
 		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pokemon_setLevel_m242BD4CFEE8DEA8F4D2650C7B419538BBF41D0D1_inline (Pokemon_tB45F2D3C833A5BC0ADA15722A03744FE8552E588* __this, int32_t ___newLevel0, const RuntimeMethod* method) 
+{
+	{
+		// level=newLevel;
+		int32_t L_0 = ___newLevel0;
+		__this->___level_1 = L_0;
+		// }
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
@@ -9048,18 +9538,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		__this->___x_0 = L_0;
 		float L_1 = ___y1;
 		__this->___y_1 = L_1;
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) 
-{
-	{
-		float L_0 = ___x0;
-		__this->___x_2 = L_0;
-		float L_1 = ___y1;
-		__this->___y_3 = L_1;
-		float L_2 = ___z2;
-		__this->___z_4 = L_2;
 		return;
 	}
 }

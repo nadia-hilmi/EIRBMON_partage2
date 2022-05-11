@@ -17,6 +17,11 @@ public class Pokemon
         get{
             return level;
         }
+
+    }
+
+    public void setLevel(int newLevel){
+        level=newLevel;
     }
 
     public int HP {get; set;} //current HP of the pokemon

@@ -12,6 +12,7 @@ public class PokemonParty : MonoBehaviour
             return pokemons;
         }
     }
+
     private void Start(){
         foreach(var pokemon in pokemons){
             pokemon.Init();

@@ -226,175 +226,195 @@ extern void PartyScreen_UpdateMemberSelection_mAB65D7B1A313176211D76187AC5527BF6
 extern void PartyScreen_SetMessageText_m2341AC666C65FF81F612EDF9A15024D4B9EBE377 (void);
 // 0x0000006B System.Void PartyScreen::.ctor()
 extern void PartyScreen__ctor_m26FCDE97CF6ACA5A99340182E5655853A321FD08 (void);
-// 0x0000006C System.Void GameController::Start()
+// 0x0000006C System.Void GameController::playerInitializePosition()
+extern void GameController_playerInitializePosition_mE1C469536E522E5689594112D08C1509C2D83A78 (void);
+// 0x0000006D System.Void GameController::playerSetPositionX(System.Int32)
+extern void GameController_playerSetPositionX_m20DE426B5D22C4F7876B5DE71A20D044F80DDFA0 (void);
+// 0x0000006E System.Void GameController::playerSetPositionY(System.Int32)
+extern void GameController_playerSetPositionY_m8DBD44384E3EDD396E364568244092C5CC3FDDC7 (void);
+// 0x0000006F System.Void GameController::Start()
 extern void GameController_Start_mD0C79B8B5B5D8EDC88F7F2F88B5954B1342198EF (void);
-// 0x0000006D System.Void GameController::StartBattle()
+// 0x00000070 System.Void GameController::StartBattle()
 extern void GameController_StartBattle_mED29EB47F3B48324AEC80104AA85DF21F3479B01 (void);
-// 0x0000006E System.Void GameController::EndBattle(System.Boolean)
+// 0x00000071 System.Void GameController::EndBattle(System.Boolean)
 extern void GameController_EndBattle_m2F0C2035D97B7833497B5956F0D9EF29D3487FE0 (void);
-// 0x0000006F System.Void GameController::Update()
+// 0x00000072 System.Void GameController::Update()
 extern void GameController_Update_m5E36D1D6999A7510DFDFBF6805CF9E9CB50F0962 (void);
-// 0x00000070 System.Void GameController::.ctor()
+// 0x00000073 System.Void GameController::.ctor()
 extern void GameController__ctor_mB6369F6C5357D5984325D613D589EDA60818CBE9 (void);
-// 0x00000071 Pokemon MapArea::GetRandomWildPokemon()
+// 0x00000074 Pokemon MapArea::GetRandomWildPokemon()
 extern void MapArea_GetRandomWildPokemon_m496F1CFB9B123769C7B516D0C2ED5C75BECE59FD (void);
-// 0x00000072 System.Void MapArea::.ctor()
+// 0x00000075 System.Void MapArea::.ctor()
 extern void MapArea__ctor_m08C1A5E063378881501DCB26F1DC4AEE90AC22A4 (void);
-// 0x00000073 System.Void PlayerController::add_OnEncountered(System.Action)
+// 0x00000076 System.Void PlayerController::add_OnEncountered(System.Action)
 extern void PlayerController_add_OnEncountered_mA059658E81B4A3C3AC1A05954EE6445DD5B9CFAE (void);
-// 0x00000074 System.Void PlayerController::remove_OnEncountered(System.Action)
+// 0x00000077 System.Void PlayerController::remove_OnEncountered(System.Action)
 extern void PlayerController_remove_OnEncountered_mA4CF20222C0F20D1B67F7755F1F0E306FB0CCEDE (void);
-// 0x00000075 System.Void PlayerController::Awake()
+// 0x00000078 System.Void PlayerController::Awake()
 extern void PlayerController_Awake_m82639826DE098DC447C79B43900C5F2A630B3DC3 (void);
-// 0x00000076 System.Void PlayerController::HandleUpdate()
+// 0x00000079 System.Void PlayerController::HandleUpdate()
 extern void PlayerController_HandleUpdate_m40DED6071AD2ABACAF36A8F746D0A9878E8D2799 (void);
-// 0x00000077 System.Collections.IEnumerator PlayerController::Move(UnityEngine.Vector3)
+// 0x0000007A System.Collections.IEnumerator PlayerController::Move(UnityEngine.Vector3)
 extern void PlayerController_Move_m6D6A5CC7044A9A460811826FF46CE8C3A88A394A (void);
-// 0x00000078 System.Boolean PlayerController::IsWalkable(UnityEngine.Vector3)
+// 0x0000007B System.Boolean PlayerController::IsWalkable(UnityEngine.Vector3)
 extern void PlayerController_IsWalkable_m31DFB0C8FF7AC7FEA80C61FE5FB934FC7EEF8A72 (void);
-// 0x00000079 System.Void PlayerController::CheckForEncounters()
+// 0x0000007C System.Void PlayerController::CheckForEncounters()
 extern void PlayerController_CheckForEncounters_mB45FA33328E49DD6D96956502662B302BCC4640F (void);
-// 0x0000007A System.Void PlayerController::.ctor()
+// 0x0000007D System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x0000007B System.Void PlayerController/<Move>d__11::.ctor(System.Int32)
+// 0x0000007E System.Void PlayerController/<Move>d__11::.ctor(System.Int32)
 extern void U3CMoveU3Ed__11__ctor_m7D6AE1FE6A68EE539F9586CA5AB15D2D7A62E890 (void);
-// 0x0000007C System.Void PlayerController/<Move>d__11::System.IDisposable.Dispose()
+// 0x0000007F System.Void PlayerController/<Move>d__11::System.IDisposable.Dispose()
 extern void U3CMoveU3Ed__11_System_IDisposable_Dispose_m8C6EFC3E793544FDAEC9BF43539357AEC0477817 (void);
-// 0x0000007D System.Boolean PlayerController/<Move>d__11::MoveNext()
+// 0x00000080 System.Boolean PlayerController/<Move>d__11::MoveNext()
 extern void U3CMoveU3Ed__11_MoveNext_mA2536C6AE7B43AE755289D68AEB584830214A75A (void);
-// 0x0000007E System.Object PlayerController/<Move>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000081 System.Object PlayerController/<Move>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CMoveU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA621791388BBDC44CB8797B787274DD350F295A2 (void);
-// 0x0000007F System.Void PlayerController/<Move>d__11::System.Collections.IEnumerator.Reset()
+// 0x00000082 System.Void PlayerController/<Move>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CMoveU3Ed__11_System_Collections_IEnumerator_Reset_m5E6A66BA3C992175DC6E2DF74077157D8770D354 (void);
-// 0x00000080 System.Object PlayerController/<Move>d__11::System.Collections.IEnumerator.get_Current()
+// 0x00000083 System.Object PlayerController/<Move>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CMoveU3Ed__11_System_Collections_IEnumerator_get_Current_mA7C81A2723B3936D3A74FAE8DC68346D61BA2FE8 (void);
-// 0x00000081 MoveBase Move::get_Base()
+// 0x00000084 MoveBase Move::get_Base()
 extern void Move_get_Base_m530DEC1DD266CF829322B1E7B77C358F5C139E0C (void);
-// 0x00000082 System.Void Move::set_Base(MoveBase)
+// 0x00000085 System.Void Move::set_Base(MoveBase)
 extern void Move_set_Base_m402F4713DAB0CBDA5516D7A7C60A23B0853DB081 (void);
-// 0x00000083 System.Int32 Move::get_PP()
+// 0x00000086 System.Int32 Move::get_PP()
 extern void Move_get_PP_m0C647BE172C68233B1230F7BD137BFBA57A8EC93 (void);
-// 0x00000084 System.Void Move::set_PP(System.Int32)
+// 0x00000087 System.Void Move::set_PP(System.Int32)
 extern void Move_set_PP_m5B1C9087017C2454769B17CB5CFCF381E65FBC04 (void);
-// 0x00000085 System.Void Move::.ctor(MoveBase)
+// 0x00000088 System.Void Move::.ctor(MoveBase)
 extern void Move__ctor_m88D4D42F5689C3EADC300FD1EBBC4A91BACD7CC5 (void);
-// 0x00000086 System.String MoveBase::GetName()
+// 0x00000089 System.String MoveBase::GetName()
 extern void MoveBase_GetName_m157AA33464CE851FABB9C14D8B3734EAE5F0B79F (void);
-// 0x00000087 System.String MoveBase::GetDescription()
+// 0x0000008A System.String MoveBase::GetDescription()
 extern void MoveBase_GetDescription_m1F093E96AFC056908720683983D49AC5F93CE657 (void);
-// 0x00000088 System.Int32 MoveBase::GetPp()
+// 0x0000008B System.Int32 MoveBase::GetPp()
 extern void MoveBase_GetPp_m1AF9B39CFFCE45BDD16F96C4A55F3B989316332A (void);
-// 0x00000089 System.Int32 MoveBase::GetPower()
+// 0x0000008C System.Int32 MoveBase::GetPower()
 extern void MoveBase_GetPower_m573EC5118264E528D44B426C390CF532C05AECAC (void);
-// 0x0000008A System.Int32 MoveBase::GetAccuracy()
+// 0x0000008D System.Int32 MoveBase::GetAccuracy()
 extern void MoveBase_GetAccuracy_m70047CA08E26B6E56C611BA13252E2C08E659627 (void);
-// 0x0000008B PokemonType MoveBase::GetType()
+// 0x0000008E PokemonType MoveBase::GetType()
 extern void MoveBase_GetType_mB512F4D7A3267608D64A127A99D98A4542D8BB62 (void);
-// 0x0000008C System.Boolean MoveBase::get_isSpecial()
+// 0x0000008F System.Boolean MoveBase::get_isSpecial()
 extern void MoveBase_get_isSpecial_m1A4B843385661CF5ED6E5CFDF409A99F7CC863B7 (void);
-// 0x0000008D System.Void MoveBase::.ctor()
+// 0x00000090 System.Void MoveBase::.ctor()
 extern void MoveBase__ctor_mEB351A9C395BD673C3172FB1E7A092F83165ED06 (void);
-// 0x0000008E PokemonBase Pokemon::get_Base()
+// 0x00000091 PokemonBase Pokemon::get_Base()
 extern void Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF (void);
-// 0x0000008F System.Int32 Pokemon::get_Level()
+// 0x00000092 System.Int32 Pokemon::get_Level()
 extern void Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154 (void);
-// 0x00000090 System.Int32 Pokemon::get_HP()
+// 0x00000093 System.Void Pokemon::setLevel(System.Int32)
+extern void Pokemon_setLevel_m242BD4CFEE8DEA8F4D2650C7B419538BBF41D0D1 (void);
+// 0x00000094 System.Int32 Pokemon::get_HP()
 extern void Pokemon_get_HP_m4DE7773C1D94288205D5B71344E375E141B4BB5C (void);
-// 0x00000091 System.Void Pokemon::set_HP(System.Int32)
+// 0x00000095 System.Void Pokemon::set_HP(System.Int32)
 extern void Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411 (void);
-// 0x00000092 System.Collections.Generic.List`1<Move> Pokemon::get_Moves()
+// 0x00000096 System.Collections.Generic.List`1<Move> Pokemon::get_Moves()
 extern void Pokemon_get_Moves_m62AF86EE0DACB229DE7C6CA5570F377E67B63F9E (void);
-// 0x00000093 System.Void Pokemon::set_Moves(System.Collections.Generic.List`1<Move>)
+// 0x00000097 System.Void Pokemon::set_Moves(System.Collections.Generic.List`1<Move>)
 extern void Pokemon_set_Moves_mA886CAEABAF3C718E40A3E264D5070E6E68FBF82 (void);
-// 0x00000094 System.Void Pokemon::Init()
+// 0x00000098 System.Collections.Generic.Dictionary`2<Stat,System.Int32> Pokemon::get_Stats()
+extern void Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0 (void);
+// 0x00000099 System.Void Pokemon::set_Stats(System.Collections.Generic.Dictionary`2<Stat,System.Int32>)
+extern void Pokemon_set_Stats_mA6375ECB7477FF7FB9DD442BC76FF5F2E70A874E (void);
+// 0x0000009A System.Void Pokemon::Init()
 extern void Pokemon_Init_m9DDEC73AEC4D633BA4B425546D9BFAAC23A2EE5D (void);
-// 0x00000095 System.Int32 Pokemon::get_Attack()
+// 0x0000009B System.Void Pokemon::CalculateStats()
+extern void Pokemon_CalculateStats_mF266A52104A0869363383B4020DD28657E73F2C3 (void);
+// 0x0000009C System.Int32 Pokemon::GetStat(Stat)
+extern void Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48 (void);
+// 0x0000009D System.Int32 Pokemon::get_Attack()
 extern void Pokemon_get_Attack_m020EFC197279FC83920F74F4CEEBBD0AE7BAE941 (void);
-// 0x00000096 System.Int32 Pokemon::get_Defense()
+// 0x0000009E System.Int32 Pokemon::get_Defense()
 extern void Pokemon_get_Defense_m39FB5603123DBEBDEA31A6C5AF7355B5198B9CB7 (void);
-// 0x00000097 System.Int32 Pokemon::get_SpAttack()
+// 0x0000009F System.Int32 Pokemon::get_SpAttack()
 extern void Pokemon_get_SpAttack_mFC04B4BBC1747EF09A5BD85E765F0408490F586B (void);
-// 0x00000098 System.Int32 Pokemon::get_SpDefense()
+// 0x000000A0 System.Int32 Pokemon::get_SpDefense()
 extern void Pokemon_get_SpDefense_m096B9F479778869772EB5782B88CFC9099F0FD51 (void);
-// 0x00000099 System.Int32 Pokemon::get_Speed()
+// 0x000000A1 System.Int32 Pokemon::get_Speed()
 extern void Pokemon_get_Speed_m26A92E7C1806F4AAD62EBA8FED1C4759CEA7EB7A (void);
-// 0x0000009A System.Int32 Pokemon::get_MaxHp()
+// 0x000000A2 System.Int32 Pokemon::get_MaxHp()
 extern void Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1 (void);
-// 0x0000009B DamageDetails Pokemon::TakeDamage(Move,Pokemon)
+// 0x000000A3 System.Void Pokemon::set_MaxHp(System.Int32)
+extern void Pokemon_set_MaxHp_mD30CF7FD5CADA3FD5584FC528189D30532AEC264 (void);
+// 0x000000A4 DamageDetails Pokemon::TakeDamage(Move,Pokemon)
 extern void Pokemon_TakeDamage_m60E15AB16F5398C01ED2C1B6C40B1CCF9DE9D444 (void);
-// 0x0000009C Move Pokemon::GetRandomMove()
+// 0x000000A5 Move Pokemon::GetRandomMove()
 extern void Pokemon_GetRandomMove_mF8E10033889A89E7D2BBDE27F4BE849915D4FFA7 (void);
-// 0x0000009D System.Void Pokemon::.ctor()
+// 0x000000A6 System.Void Pokemon::.ctor()
 extern void Pokemon__ctor_mF8DBBF0039C2B0BC9F046A69DED93D6701B6E9EF (void);
-// 0x0000009E System.Boolean DamageDetails::get_Fainted()
+// 0x000000A7 System.Boolean DamageDetails::get_Fainted()
 extern void DamageDetails_get_Fainted_m194856D96A4EF9C4D463E354D74EB4FE0FFAAC96 (void);
-// 0x0000009F System.Void DamageDetails::set_Fainted(System.Boolean)
+// 0x000000A8 System.Void DamageDetails::set_Fainted(System.Boolean)
 extern void DamageDetails_set_Fainted_m06949271BC6254432C25E7A9E4F5A1C155962772 (void);
-// 0x000000A0 System.Single DamageDetails::get_TypeEffectiveness()
+// 0x000000A9 System.Single DamageDetails::get_TypeEffectiveness()
 extern void DamageDetails_get_TypeEffectiveness_m78843324BD5A2BD4CB6C254CF298D2A37A8A6DE8 (void);
-// 0x000000A1 System.Void DamageDetails::set_TypeEffectiveness(System.Single)
+// 0x000000AA System.Void DamageDetails::set_TypeEffectiveness(System.Single)
 extern void DamageDetails_set_TypeEffectiveness_mAD6445B258772F86EC46540CABD92B09A40B44D7 (void);
-// 0x000000A2 System.Single DamageDetails::get_Critical()
+// 0x000000AB System.Single DamageDetails::get_Critical()
 extern void DamageDetails_get_Critical_m8F98EDB7B907FD9A40B17CB0C946FE94D2965861 (void);
-// 0x000000A3 System.Void DamageDetails::set_Critical(System.Single)
+// 0x000000AC System.Void DamageDetails::set_Critical(System.Single)
 extern void DamageDetails_set_Critical_m512AF949D835C37D46BC8B3B65477E9A4AB582D2 (void);
-// 0x000000A4 System.Void DamageDetails::.ctor()
+// 0x000000AD System.Void DamageDetails::.ctor()
 extern void DamageDetails__ctor_m7095813BD7D20938CEF1FBC267F8213008B95D4A (void);
-// 0x000000A5 System.Int32 PokemonBase::GetSpeed()
+// 0x000000AE System.Int32 PokemonBase::GetSpeed()
 extern void PokemonBase_GetSpeed_m46C13F0714F1BC31DB2E9DAA94239EEDE9804E6B (void);
-// 0x000000A6 System.Int32 PokemonBase::GetSpDefense()
+// 0x000000AF System.Int32 PokemonBase::GetSpDefense()
 extern void PokemonBase_GetSpDefense_m12768501E8D5644DFF9EB8F400A63D4FA70D77A5 (void);
-// 0x000000A7 System.Int32 PokemonBase::GetSpAttack()
+// 0x000000B0 System.Int32 PokemonBase::GetSpAttack()
 extern void PokemonBase_GetSpAttack_m5D3D823FA015F1CBD5CDDD9A1DAFBF5E11ECBA2E (void);
-// 0x000000A8 System.Int32 PokemonBase::GetDefense()
+// 0x000000B1 System.Int32 PokemonBase::GetDefense()
 extern void PokemonBase_GetDefense_m409342ACFFC8293E7CA1A242972FAD2CABBDAF56 (void);
-// 0x000000A9 System.Int32 PokemonBase::GetAttack()
+// 0x000000B2 System.Int32 PokemonBase::GetAttack()
 extern void PokemonBase_GetAttack_m83C0E60CA05F509F567C69A95E348422C6FFFD90 (void);
-// 0x000000AA System.Int32 PokemonBase::GetMaxHp()
+// 0x000000B3 System.Int32 PokemonBase::GetMaxHp()
 extern void PokemonBase_GetMaxHp_mE1765850C9E471B60EB756C3A5BB241D143D4558 (void);
-// 0x000000AB System.String PokemonBase::GetName()
+// 0x000000B4 System.String PokemonBase::GetName()
 extern void PokemonBase_GetName_mDBC0F2DAC682C23EC4BC67A9307B16032B176ACD (void);
-// 0x000000AC System.String PokemonBase::GetDescription()
+// 0x000000B5 System.String PokemonBase::GetDescription()
 extern void PokemonBase_GetDescription_mB08B6C7203F8731055055987C94F9192F27F6A33 (void);
-// 0x000000AD UnityEngine.Sprite PokemonBase::GetFrontSprite()
+// 0x000000B6 UnityEngine.Sprite PokemonBase::GetFrontSprite()
 extern void PokemonBase_GetFrontSprite_m7E6C66541BC08B71B9AF64DB9513F0B3A29A1E0D (void);
-// 0x000000AE UnityEngine.Sprite PokemonBase::GetBackSprite()
+// 0x000000B7 UnityEngine.Sprite PokemonBase::GetBackSprite()
 extern void PokemonBase_GetBackSprite_m8DB7A9AC5EB0E493E8CA2C67D4BC620182850528 (void);
-// 0x000000AF PokemonType PokemonBase::GetType1()
+// 0x000000B8 PokemonType PokemonBase::GetType1()
 extern void PokemonBase_GetType1_m471E50E8B90B018D32BAA39A5DBDFE2B8EDC0CB6 (void);
-// 0x000000B0 PokemonType PokemonBase::GetType2()
+// 0x000000B9 PokemonType PokemonBase::GetType2()
 extern void PokemonBase_GetType2_mCF6B563D4E78027596DA2FEEECADCE575C63CCFD (void);
-// 0x000000B1 System.Collections.Generic.List`1<LearnableMove> PokemonBase::GetLearnableMoves()
+// 0x000000BA System.Collections.Generic.List`1<LearnableMove> PokemonBase::GetLearnableMoves()
 extern void PokemonBase_GetLearnableMoves_m340CC644A33384FB25E792157A9C48633A29F944 (void);
-// 0x000000B2 System.Void PokemonBase::.ctor()
+// 0x000000BB System.Void PokemonBase::.ctor()
 extern void PokemonBase__ctor_m6F25DBF0F899B29F051F660AA9DF31CE6240D831 (void);
-// 0x000000B3 MoveBase LearnableMove::GetBase()
+// 0x000000BC MoveBase LearnableMove::GetBase()
 extern void LearnableMove_GetBase_mABD2FB86D7ACFD1D42D3F1B0E1C07A455EFD97BC (void);
-// 0x000000B4 System.Int32 LearnableMove::GetLevel()
+// 0x000000BD System.Int32 LearnableMove::GetLevel()
 extern void LearnableMove_GetLevel_mB7B88845EB00FEDA4C641C98718C692295965489 (void);
-// 0x000000B5 System.Void LearnableMove::.ctor()
+// 0x000000BE System.Void LearnableMove::.ctor()
 extern void LearnableMove__ctor_mB14F3224AFC5B761ABD27E8C49C7AE2BA347E4AF (void);
-// 0x000000B6 System.Single TypeChart::GetEffectiveness(PokemonType,PokemonType)
+// 0x000000BF System.Single TypeChart::GetEffectiveness(PokemonType,PokemonType)
 extern void TypeChart_GetEffectiveness_mAF877967F18DEE0D17B220097D0FFBD972257353 (void);
-// 0x000000B7 System.Void TypeChart::.ctor()
+// 0x000000C0 System.Void TypeChart::.ctor()
 extern void TypeChart__ctor_mD3AC00F583CF8BB9CB1EA217261F57E6DD340050 (void);
-// 0x000000B8 System.Void TypeChart::.cctor()
+// 0x000000C1 System.Void TypeChart::.cctor()
 extern void TypeChart__cctor_m075B84619E90D88C8C504F96F3EA06AC9220328F (void);
-// 0x000000B9 System.Collections.Generic.List`1<Pokemon> PokemonParty::get_Pokemons()
+// 0x000000C2 System.Collections.Generic.List`1<Pokemon> PokemonParty::get_Pokemons()
 extern void PokemonParty_get_Pokemons_m53491D770966AC62AB5A209559A17ECB512A0287 (void);
-// 0x000000BA System.Void PokemonParty::Start()
+// 0x000000C3 System.Void PokemonParty::UpdateLevel(System.Collections.Generic.List`1<System.Int32>)
+extern void PokemonParty_UpdateLevel_m75249AD1E6C401972F3443423BFF1950DFD7C860 (void);
+// 0x000000C4 System.Void PokemonParty::Start()
 extern void PokemonParty_Start_m30774AE71368F0B59975D61AC1A3DA4417EF81A5 (void);
-// 0x000000BB Pokemon PokemonParty::GetHealthyPokemon()
+// 0x000000C5 Pokemon PokemonParty::GetHealthyPokemon()
 extern void PokemonParty_GetHealthyPokemon_mD96453A8550DB35281EE57ED532A634AFE4D3B53 (void);
-// 0x000000BC System.Void PokemonParty::.ctor()
+// 0x000000C6 System.Void PokemonParty::.ctor()
 extern void PokemonParty__ctor_m46AFB09F95E78DB0F1416455BC4E127A5FADAFD2 (void);
-// 0x000000BD System.Void PokemonParty/<>c::.cctor()
+// 0x000000C7 System.Void PokemonParty/<>c::.cctor()
 extern void U3CU3Ec__cctor_m117FBC30BAC4EC0C92A5BA8650EFEC48B17E648D (void);
-// 0x000000BE System.Void PokemonParty/<>c::.ctor()
+// 0x000000C8 System.Void PokemonParty/<>c::.ctor()
 extern void U3CU3Ec__ctor_m71FB2EE8D85DE9B5DAFB7A921B0C04B09D91201A (void);
-// 0x000000BF System.Boolean PokemonParty/<>c::<GetHealthyPokemon>b__4_0(Pokemon)
-extern void U3CU3Ec_U3CGetHealthyPokemonU3Eb__4_0_m788527D417CD19D292C94CE8E0CC8BA2327C29FE (void);
-static Il2CppMethodPointer s_methodPointers[191] = 
+// 0x000000C9 System.Boolean PokemonParty/<>c::<GetHealthyPokemon>b__5_0(Pokemon)
+extern void U3CU3Ec_U3CGetHealthyPokemonU3Eb__5_0_m51A49AC449D85338ECAF78A4B61A1A943E580B83 (void);
+static Il2CppMethodPointer s_methodPointers[201] = 
 {
 	BattleDialogBox_SetDialog_mC18946DBD8DDB31BAA93E7316DAC36A20EDFEB38,
 	BattleDialogBox_TypeDialog_m4C329A66D460ED710CC96CD3D3B1FB82932B0182,
@@ -503,6 +523,9 @@ static Il2CppMethodPointer s_methodPointers[191] =
 	PartyScreen_UpdateMemberSelection_mAB65D7B1A313176211D76187AC5527BF6F9B732B,
 	PartyScreen_SetMessageText_m2341AC666C65FF81F612EDF9A15024D4B9EBE377,
 	PartyScreen__ctor_m26FCDE97CF6ACA5A99340182E5655853A321FD08,
+	GameController_playerInitializePosition_mE1C469536E522E5689594112D08C1509C2D83A78,
+	GameController_playerSetPositionX_m20DE426B5D22C4F7876B5DE71A20D044F80DDFA0,
+	GameController_playerSetPositionY_m8DBD44384E3EDD396E364568244092C5CC3FDDC7,
 	GameController_Start_mD0C79B8B5B5D8EDC88F7F2F88B5954B1342198EF,
 	GameController_StartBattle_mED29EB47F3B48324AEC80104AA85DF21F3479B01,
 	GameController_EndBattle_m2F0C2035D97B7833497B5956F0D9EF29D3487FE0,
@@ -539,17 +562,23 @@ static Il2CppMethodPointer s_methodPointers[191] =
 	MoveBase__ctor_mEB351A9C395BD673C3172FB1E7A092F83165ED06,
 	Pokemon_get_Base_mB65C7DAA3E3340854FD08BD13BFA2C0008DA08AF,
 	Pokemon_get_Level_m299E799D4F8C206784DC58D237944660C16D6154,
+	Pokemon_setLevel_m242BD4CFEE8DEA8F4D2650C7B419538BBF41D0D1,
 	Pokemon_get_HP_m4DE7773C1D94288205D5B71344E375E141B4BB5C,
 	Pokemon_set_HP_m029904C551B0493D7E65EFEF85FA56189979B411,
 	Pokemon_get_Moves_m62AF86EE0DACB229DE7C6CA5570F377E67B63F9E,
 	Pokemon_set_Moves_mA886CAEABAF3C718E40A3E264D5070E6E68FBF82,
+	Pokemon_get_Stats_mA725BAFA5BFF5652B12C37B58C8A32721D4DA7B0,
+	Pokemon_set_Stats_mA6375ECB7477FF7FB9DD442BC76FF5F2E70A874E,
 	Pokemon_Init_m9DDEC73AEC4D633BA4B425546D9BFAAC23A2EE5D,
+	Pokemon_CalculateStats_mF266A52104A0869363383B4020DD28657E73F2C3,
+	Pokemon_GetStat_mA7E2A0C3433251C39FC854C6E086DD94D4928B48,
 	Pokemon_get_Attack_m020EFC197279FC83920F74F4CEEBBD0AE7BAE941,
 	Pokemon_get_Defense_m39FB5603123DBEBDEA31A6C5AF7355B5198B9CB7,
 	Pokemon_get_SpAttack_mFC04B4BBC1747EF09A5BD85E765F0408490F586B,
 	Pokemon_get_SpDefense_m096B9F479778869772EB5782B88CFC9099F0FD51,
 	Pokemon_get_Speed_m26A92E7C1806F4AAD62EBA8FED1C4759CEA7EB7A,
 	Pokemon_get_MaxHp_m8F8C0927B8A5F5A02BB1BD86EC96074526C95AA1,
+	Pokemon_set_MaxHp_mD30CF7FD5CADA3FD5584FC528189D30532AEC264,
 	Pokemon_TakeDamage_m60E15AB16F5398C01ED2C1B6C40B1CCF9DE9D444,
 	Pokemon_GetRandomMove_mF8E10033889A89E7D2BBDE27F4BE849915D4FFA7,
 	Pokemon__ctor_mF8DBBF0039C2B0BC9F046A69DED93D6701B6E9EF,
@@ -581,212 +610,223 @@ static Il2CppMethodPointer s_methodPointers[191] =
 	TypeChart__ctor_mD3AC00F583CF8BB9CB1EA217261F57E6DD340050,
 	TypeChart__cctor_m075B84619E90D88C8C504F96F3EA06AC9220328F,
 	PokemonParty_get_Pokemons_m53491D770966AC62AB5A209559A17ECB512A0287,
+	PokemonParty_UpdateLevel_m75249AD1E6C401972F3443423BFF1950DFD7C860,
 	PokemonParty_Start_m30774AE71368F0B59975D61AC1A3DA4417EF81A5,
 	PokemonParty_GetHealthyPokemon_mD96453A8550DB35281EE57ED532A634AFE4D3B53,
 	PokemonParty__ctor_m46AFB09F95E78DB0F1416455BC4E127A5FADAFD2,
 	U3CU3Ec__cctor_m117FBC30BAC4EC0C92A5BA8650EFEC48B17E648D,
 	U3CU3Ec__ctor_m71FB2EE8D85DE9B5DAFB7A921B0C04B09D91201A,
-	U3CU3Ec_U3CGetHealthyPokemonU3Eb__4_0_m788527D417CD19D292C94CE8E0CC8BA2327C29FE,
+	U3CU3Ec_U3CGetHealthyPokemonU3Eb__5_0_m51A49AC449D85338ECAF78A4B61A1A943E580B83,
 };
-static const int32_t s_InvokerIndices[191] = 
+static const int32_t s_InvokerIndices[201] = 
 {
-	2727,
-	2086,
-	2752,
-	2752,
-	2752,
-	2710,
-	1476,
-	2727,
-	3313,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2727,
-	3232,
-	3313,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2727,
-	2727,
-	1589,
-	3232,
-	2752,
-	3313,
-	3313,
-	3313,
-	3232,
-	3232,
+	2737,
+	2092,
+	2762,
+	2762,
+	2762,
+	2720,
+	1478,
+	2737,
+	3327,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2737,
+	3246,
+	3327,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2737,
+	2737,
+	1591,
+	3246,
+	2762,
+	3327,
+	3327,
+	3327,
+	3246,
+	3246,
 	678,
-	2727,
-	2086,
-	3313,
-	3313,
-	3313,
-	3313,
-	2086,
-	3313,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	3262,
-	3232,
-	3232,
-	2727,
-	3313,
-	2727,
-	3313,
-	3313,
-	3313,
-	3313,
-	3313,
-	2757,
-	2089,
-	3313,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	2727,
-	2752,
-	3313,
-	3313,
-	2727,
-	2710,
-	2727,
-	3313,
-	3313,
-	3313,
-	2752,
-	3313,
-	3313,
-	3232,
-	3313,
-	2727,
-	2727,
-	3313,
-	3313,
-	2096,
-	2413,
-	3313,
-	3313,
-	2710,
-	3313,
-	3262,
-	3232,
-	3313,
-	3232,
-	3232,
-	2727,
-	3213,
-	2710,
-	2727,
-	3232,
-	3232,
-	3213,
-	3213,
-	3213,
-	3213,
-	3262,
-	3313,
-	3232,
-	3213,
-	3213,
-	2710,
-	3232,
-	2727,
-	3313,
-	3213,
-	3213,
-	3213,
-	3213,
-	3213,
-	3213,
+	2737,
+	2092,
+	3327,
+	3327,
+	3327,
+	3327,
+	2092,
+	3327,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	3276,
+	3246,
+	3246,
+	2737,
+	3327,
+	2737,
+	3327,
+	3327,
+	3327,
+	3327,
+	3327,
+	2767,
+	2095,
+	3327,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	2737,
+	2762,
+	3327,
+	3327,
+	2737,
+	2720,
+	2737,
+	3327,
+	3327,
+	2720,
+	2720,
+	3327,
+	3327,
+	2762,
+	3327,
+	3327,
+	3246,
+	3327,
+	2737,
+	2737,
+	3327,
+	3327,
+	2102,
+	2421,
+	3327,
+	3327,
+	2720,
+	3327,
+	3276,
+	3246,
+	3327,
+	3246,
+	3246,
+	2737,
+	3227,
+	2720,
+	2737,
+	3246,
+	3246,
+	3227,
+	3227,
+	3227,
+	3227,
+	3276,
+	3327,
+	3246,
+	3227,
+	2720,
+	3227,
+	2720,
+	3246,
+	2737,
+	3246,
+	2737,
+	3327,
+	3327,
+	1957,
+	3227,
+	3227,
+	3227,
+	3227,
+	3227,
+	3227,
+	2720,
 	1099,
-	3232,
-	3313,
-	3262,
-	2752,
-	3267,
-	2757,
-	3267,
-	2757,
-	3313,
-	3213,
-	3213,
-	3213,
-	3213,
-	3213,
-	3213,
-	3232,
-	3232,
-	3232,
-	3232,
-	3213,
-	3213,
-	3232,
-	3313,
-	3232,
-	3213,
-	3313,
-	4645,
-	3313,
-	5129,
-	3232,
-	3313,
-	3232,
-	3313,
-	5129,
-	3313,
-	2339,
+	3246,
+	3327,
+	3276,
+	2762,
+	3281,
+	2767,
+	3281,
+	2767,
+	3327,
+	3227,
+	3227,
+	3227,
+	3227,
+	3227,
+	3227,
+	3246,
+	3246,
+	3246,
+	3246,
+	3227,
+	3227,
+	3246,
+	3327,
+	3246,
+	3227,
+	3327,
+	4659,
+	3327,
+	5143,
+	3246,
+	2737,
+	3327,
+	3246,
+	3327,
+	5143,
+	3327,
+	2347,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	191,
+	201,
 	s_methodPointers,
 	0,
 	NULL,
