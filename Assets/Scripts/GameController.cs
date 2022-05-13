@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState{FreeRoam,Battle}
+public enum GameState{FreeRoam,Battle, Menu}
 
 public class GameController : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     [SerializeField] Camera worldCamera;
     GameState state;
 
+    MenuController menuController;
     public void playerInitializePosition () {
         playerController.transform.position = new Vector3(0, 0, 0);
     }
@@ -50,6 +51,15 @@ public class GameController : MonoBehaviour
     private void Start(){
         playerController.OnEncountered+=StartBattle;
         battleSystem.OnBattleOver+=EndBattle;
+
+        menuController = GetComponent<MenuController>();
+
+        menuController.onBack += () => 
+        {
+            state = GameState.FreeRoam;
+        };
+
+        menuController.onMenuSelected += onMenuSelected; 
     }
 
     void StartBattle(){
@@ -69,10 +79,37 @@ public class GameController : MonoBehaviour
     private void Update(){
         if(state==GameState.FreeRoam){
             playerController.HandleUpdate();
+
+            if (Input.GetKeyDown(KeyCode.M)){
+                menuController.OpenMenu();
+                state = GameState.Menu;
+                 
+            }
         }
         else if (state==GameState.Battle){
             battleSystem.HandleUpdate();
         }
+        else if (state == GameState.Menu){
+            menuController.HandleUpdate();
+        }
     }
+
+     void onMenuSelected(int selector) 
+     {
+         if (selector == 0)
+         {
+             // pokemon
+         }
+         else if (selector == 1)
+         {
+             // bag
+         }
+         else if ( selector == 2)
+         {
+             // save
+         }
+
+         state = GameState.FreeRoam;
+     }
 
 }
