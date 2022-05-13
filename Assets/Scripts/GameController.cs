@@ -22,6 +22,29 @@ public class GameController : MonoBehaviour
         playerController.transform.position += new Vector3(0, pos, 0);
     }
 
+    public void UpdateLevel(string levelText){
+        var playerParty= playerController.GetComponent<PokemonParty>();
+        int i=0;
+        string[] eachLevelText = levelText.Split(",");
+        
+        foreach(var pokemon in playerParty.Pokemons){
+            int level=int.Parse(eachLevelText[i]);
+            pokemon.setLevel(level);
+            i+=1;
+        }
+    }
+
+    public void UpdateHP(string hpText){
+        var playerParty= playerController.GetComponent<PokemonParty>();
+        int i=0;
+        string[] eachHpText = hpText.Split(",");
+        
+        foreach(var pokemon in playerParty.Pokemons){
+            int hp=int.Parse(eachHpText[i]);
+            pokemon.SetHP(hp);
+            i+=1;
+        }
+    }
     
 
     private void Start(){
