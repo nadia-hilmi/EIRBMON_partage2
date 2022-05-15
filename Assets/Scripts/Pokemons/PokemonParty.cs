@@ -23,4 +23,16 @@ public class PokemonParty : MonoBehaviour
     public Pokemon GetHealthyPokemon(){
         return pokemons.Where(x=>x.HP>0).FirstOrDefault();//return le premier pokemon avec HP>0
     }
+
+    public void AddPokemon(Pokemon newPokemon) 
+    {
+        if (pokemons.Count < 6)
+        {
+            pokemons.Add(newPokemon);
+        }
+        else
+        {
+            // TODO: ADD to the pc
+        }
+    }
 }
