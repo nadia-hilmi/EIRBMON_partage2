@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     GameState state;
 
     MenuController menuController;
-    public void playerInitializePosition () {
+    /*public void playerInitializePosition () {
         playerController.transform.position = new Vector3(0, 0, 0);
     }
     public void playerSetPositionX (int pos) {
@@ -34,7 +34,6 @@ public class GameController : MonoBehaviour
             i+=1;
         }
     }
-
     public void UpdateHP(string hpText){
         var playerParty= playerController.GetComponent<PokemonParty>();
         int i=0;
@@ -45,8 +44,7 @@ public class GameController : MonoBehaviour
             // pokemon.SetHP(hp);
             i+=1;
         }
-    }
-    
+    }*/
 
     private void Start(){
         playerController.OnEncountered+=StartBattle;
