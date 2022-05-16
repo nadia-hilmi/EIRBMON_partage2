@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using DG.Tweening;
 
 public enum BattleState { Start, ActionSelection, MoveSelection, PerformMove, Busy, PartyScreen, BattleOver}
 public class BattleSystem : MonoBehaviour
@@ -12,6 +13,7 @@ public class BattleSystem : MonoBehaviour
 
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] PartyScreen partyScreen;
+    [SerializeField] GameObject pokeballSprite;
 
     public event Action<bool> OnBattleOver;//to determine when a battle is over
                                            //bool to know if the player won or lost the battle
@@ -197,6 +199,8 @@ public class BattleSystem : MonoBehaviour
             else if (currentAction == 1)
             {
                 //Bag selected
+                StartCoroutine(ThrowPokeball());
+
             }
             else if (currentAction == 2)
             {
@@ -301,5 +305,83 @@ public class BattleSystem : MonoBehaviour
 
             StartCoroutine(EnemyMove());
                 
+        }
+
+        IEnumerator ThrowPokeball()
+        {
+            state = BattleState.Busy;
+
+            yield return dialogBox.TypeDialog($"You used a POKEBALL!");
+
+            var pokeballObj = Instantiate(pokeballSprite, playerUnit.transform.position - new Vector3(2, 0), Quaternion.identity);
+            var pokeball = pokeballObj.GetComponent<SpriteRenderer>();
+
+            // Animation
+            yield return pokeball.transform.DOJump(enemyUnit.transform.position + new Vector3(0, 2), 2f, 1, 1f).WaitForCompletion();
+            yield return  enemyUnit.PlayCaptureAnimation();
+            yield return pokeball.transform.DOMoveY(enemyUnit.transform.position.y - 1.3f, 0.5f).WaitForCompletion();
+
+            int shakeCount = TryToCatchPokemon(enemyUnit.Pokemon);
+
+            for (int i=0; i< Mathf.Min(shakeCount, 3); ++i)
+            {
+                yield return new WaitForSeconds(0.5f);
+                yield return pokeball.transform.DOPunchRotation(new Vector3(0, 0, 10f), 0.8f).WaitForCompletion();
+            }
+
+            if (shakeCount == 4)
+            {
+                // Pokemon is caught
+                yield return dialogBox.TypeDialog($"The Eirbee was caught");
+                yield return pokeball.DOFade(0,1.5f).WaitForCompletion();
+
+                playerParty.AddPokemon(enemyUnit.Pokemon);
+                yield return dialogBox.TypeDialog($"The Eirbee has been added to your party");
+
+                StartCoroutine(Catching.CatchedPokemon("0x0klj13jklj24",1));
+
+
+                Destroy(pokeball);
+                BattleOver(true);
+
+            }
+            else 
+            {
+                //Pokemon broke out
+                yield return new WaitForSeconds(1f);
+                pokeball.DOFade(0, 0.2f);
+                yield return enemyUnit.PlayBreakOutAnimation();
+
+                if(shakeCount < 2)
+                    yield return dialogBox.TypeDialog($"The Eirbee broke free");
+                else
+                    yield return dialogBox.TypeDialog($"Almost caught it");
+
+                Destroy(pokeball);
+                ActionSelection();
+
+            }
+        }
+
+        int TryToCatchPokemon(Pokemon pokemon)
+        {
+            int catchRate = 255;
+            float a = (3 * pokemon.MaxHp - 2 * pokemon.HP) * catchRate / (3 * pokemon.MaxHp);
+
+            if (a >= 255)
+                return 4;
+
+            float b = 1048560 / Mathf.Sqrt(Mathf.Sqrt(16711680 / a));
+
+            int shakeCount = 0;
+            while (shakeCount < 4)
+            {
+                if (UnityEngine.Random.Range(0,65535) >= b)
+                    break;
+
+                ++shakeCount;
+            }
+            return shakeCount;
+
         }
 }

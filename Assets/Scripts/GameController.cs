@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
         
         foreach(var pokemon in playerParty.Pokemons){
             int hp=int.Parse(eachHpText[i]);
-            pokemon.SetHP(hp);
+            // pokemon.SetHP(hp);
             i+=1;
         }
     }
