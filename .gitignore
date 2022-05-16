@@ -1,2 +1,9 @@
+Temp
+Library
+Packages
+Logs
+.DS_STORE
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp.csproj
+UserSettings/Layouts/default-2021.dwlt
 
-Library/PackageCache/com.unity.burst@1.6.0/.Runtime/hostmac/lld
