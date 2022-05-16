@@ -26,6 +26,10 @@ public class Pokemon
 
     public int HP {get; set;} //current HP of the pokemon
 
+    public void SetHP(int newHP){
+        HP=newHP*MaxHp;
+    }
+
     public List<Move> Moves {get; set;}
     public Dictionary<Stat,int> Stats {get; private set;}
 
