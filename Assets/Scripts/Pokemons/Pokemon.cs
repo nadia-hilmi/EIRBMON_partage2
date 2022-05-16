@@ -8,6 +8,7 @@ public class Pokemon
 {
     [SerializeField] PokemonBase _base;
     [SerializeField] int level;   
+    [SerializeField] int id;   
     public PokemonBase Base {
         get{
             return _base;
@@ -19,9 +20,17 @@ public class Pokemon
         }
 
     }
+    public int Id {
+        get{
+            return id;
+        }
+    }
 
     public void setLevel(int newLevel){
         level=newLevel;
+    }
+    public void setId(int newId){
+        id=newId;
     }
 
     public int HP {get; set;} //current HP of the pokemon
@@ -128,6 +137,14 @@ public class Pokemon
         int r= Random.Range(0,Moves.Count);
         return Moves[r];
     }
+
+    public Pokemon (PokemonBase __base, int _level, int _id)
+    {
+        _base = __base;
+        level = _level;
+        id = _id;
+    }
+
 }
 
 public class DamageDetails

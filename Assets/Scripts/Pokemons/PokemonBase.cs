@@ -81,6 +81,14 @@ public class PokemonBase : ScriptableObject
         return learnableMoves;
     }
 
+    public void SetFrontSprite(Sprite _frontSprite)
+    {
+        frontSprite =  _frontSprite;
+    }
+    public void SetBackSprite(Sprite _backSprite)
+    {
+        backSprite = _backSprite;
+    }
   
 }
 

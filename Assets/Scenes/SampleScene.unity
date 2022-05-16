@@ -3604,7 +3604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wildPokemons: []
   battleSystem: {fileID: 456044611}
-  worldCamera: {fileID: 1176960701}
+  worldCamera: {fileID: 519420031}
 --- !u!1 &457017413
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,12 +4797,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: dc2eb4419a27ea24f99d53cfcc19570c, type: 2}
+  - _base: {fileID: 11400000, guid: 4d6397ec43f29c041a81f75b78c5501b, type: 2}
     level: 5
+    id: 0
   - _base: {fileID: 11400000, guid: cd360ed5f46468b46b8de5c8f2ad09b5, type: 2}
     level: 5
+    id: 0
+  - _base: {fileID: 11400000, guid: dc2eb4419a27ea24f99d53cfcc19570c, type: 2}
+    level: 5
+    id: 0
+  - _base: {fileID: 11400000, guid: 44d92ba2a22f5ef4294ac91df780e790, type: 2}
+    level: 5
+    id: 0
   battleSystem: {fileID: 456044611}
-  worldCamera: {fileID: 0}
+  worldCamera: {fileID: 519420031}
 --- !u!1 &758134666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5465,12 +5473,16 @@ MonoBehaviour:
   pokemons:
   - _base: {fileID: 11400000, guid: dc2eb4419a27ea24f99d53cfcc19570c, type: 2}
     level: 25
+    id: 0
   - _base: {fileID: 11400000, guid: cd360ed5f46468b46b8de5c8f2ad09b5, type: 2}
     level: 2
+    id: 0
   - _base: {fileID: 11400000, guid: 4d6397ec43f29c041a81f75b78c5501b, type: 2}
     level: 5
+    id: 0
   - _base: {fileID: 11400000, guid: 4d6397ec43f29c041a81f75b78c5501b, type: 2}
     level: 5
+    id: 0
 --- !u!1 &1072750381
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,7 +5711,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176960700}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &1176960703
 Transform:
   m_ObjectHideFlags: 0
