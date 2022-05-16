@@ -47,14 +47,14 @@ public class MapArea : MonoBehaviour
             wildPokemon = wildPokemons[3];
 
 
-        Pokemon newPoke = new Pokemon(wildPokemon, level, id);
+        // Pokemon newPoke = new Pokemon(wildPokemon, level, id);
 
-        newPoke.Init();
-        // wildPokemon.Init();
+        // newPoke.Init();
+        wildPokemon.Init();
 
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
-        // battleSystem.StartBattle(party,wildPokemon);
-        battleSystem.StartBattle(party, newPoke);
+        battleSystem.StartBattle(party,wildPokemon);
+        // battleSystem.StartBattle(party, newPoke);
     }
 }
