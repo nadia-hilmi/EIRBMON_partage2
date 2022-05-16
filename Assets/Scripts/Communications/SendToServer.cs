@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Catching : MonoBehaviour
+public class SendToServer : MonoBehaviour
 {
     // Start is called before the first frame update
     // void Start()

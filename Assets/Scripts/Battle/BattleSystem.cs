@@ -338,7 +338,7 @@ public class BattleSystem : MonoBehaviour
                 playerParty.AddPokemon(enemyUnit.Pokemon);
                 yield return dialogBox.TypeDialog($"The Eirbee has been added to your party");
 
-                StartCoroutine(Catching.CatchedPokemon("0x0klj13jklj24",1));
+                StartCoroutine(SendToServer.CatchedPokemon("0x0klj13jklj24",1));
 
 
                 Destroy(pokeball);
