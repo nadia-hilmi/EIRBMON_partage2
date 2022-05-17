@@ -17,6 +17,12 @@ public class GetFromServer : MonoBehaviour
         public string nft_level;
     }
 
+    public class PlayerData{
+        public string wallet;
+        public int posX;
+        public int posY;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,8 +42,7 @@ public class GetFromServer : MonoBehaviour
         {
             yield return www.SendWebRequest();
 
-            if (www.result != UnityWebRequest.Result.Success)
-            {
+            if (www.result != UnityWebRequest.Result.Success){
                 Debug.Log(www.error);
             }
             else
@@ -54,6 +59,34 @@ public class GetFromServer : MonoBehaviour
                 infos[4] = info.nft_image;
                 // Debug.Log(infos);
                 callbackOnFinish(infos);
+                yield return null;
+            }
+        }
+    }
+
+
+    public static IEnumerator GetPosition(System.Action<string[]> callbackOnFinish)
+
+    {
+        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:3001/game/position"))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success){
+                Debug.Log(www.error);
+            }
+            else
+            {
+                var res = www.downloadHandler.text;
+                PlayerData playerData = JsonUtility.FromJson<PlayerData>(res);
+                // Debug.Log("passed"+res);
+
+                string[] data = new string[2];
+                data[0] = playerData.posX.ToString();
+                data[1] = playerData.posY.ToString();
+                
+                // Debug.Log(infos);
+                callbackOnFinish(data);
                 yield return null;
             }
         }

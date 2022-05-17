@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Text;
+using UnityEngine.Networking;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
@@ -13,12 +15,29 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
 
     private Animator animator;
+
+    public string wallet;
+
+    public void setWallet (string newWallet) {
+        wallet=newWallet;
+   }
+
+    public string getWallet () {
+        return wallet;
+   }
+   
+
+    public void Start(){
+        
+    }
     private void Awake()
     {
         animator=GetComponent<Animator>();
     }
+
     public void HandleUpdate()
     {
+        
         if(!isMoving)
         {
             input.x=Input.GetAxis("Horizontal");

@@ -12,9 +12,14 @@ public class GameController : MonoBehaviour
     GameState state;
 
     MenuController menuController;
-    /*public void playerInitializePosition () {
-        playerController.transform.position = new Vector3(0, 0, 0);
+    
+    public void setWalletUser (string wallet) {
+        playerController.setWallet(wallet);
+
     }
+
+     
+    /*
     public void playerSetPositionX (int pos) {
         playerController.transform.position += new Vector3(pos, 0, 0);
     }
@@ -46,6 +51,8 @@ public class GameController : MonoBehaviour
         }
     }*/
 
+    
+
     private void Start(){
         playerController.OnEncountered+=StartBattle;
         battleSystem.OnBattleOver+=EndBattle;
@@ -58,6 +65,7 @@ public class GameController : MonoBehaviour
         };
 
         menuController.onMenuSelected += onMenuSelected; 
+        //GetFromServer.GetPosition(playerController.getWallet());
     }
 
     void StartBattle(){
@@ -74,6 +82,7 @@ public class GameController : MonoBehaviour
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);
     }
+
     private void Update(){
         if(state==GameState.FreeRoam){
             playerController.HandleUpdate();
@@ -105,6 +114,14 @@ public class GameController : MonoBehaviour
          else if ( selector == 2)
          {
              // save
+         }
+         else if ( selector == 3)
+         {
+            var playerParty=playerController.GetComponent<PokemonParty>();
+            foreach( var pokemon in playerParty.Pokemons){
+                pokemon.SetHP(1);
+            }
+            Debug.Log("All pokemons healed");
          }
 
          state = GameState.FreeRoam;
