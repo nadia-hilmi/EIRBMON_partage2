@@ -13,6 +13,17 @@ public class PlayerController : MonoBehaviour
     private Vector2 input;
 
     private Animator animator;
+
+    public float[] getPosition()
+    {
+        float[] position = new float[2];
+        position[0] = transform.position.x;
+        position[1] = transform.position.y;
+        // Debug.Log(position[0]);
+        // Debug.Log(position[1]);
+
+        return position;
+    }
     private void Awake()
     {
         animator=GetComponent<Animator>();

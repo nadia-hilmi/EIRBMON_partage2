@@ -107,6 +107,11 @@ public class GameController : MonoBehaviour
          else if ( selector == 2)
          {
              // save
+             var playerParty= playerController.GetComponent<PokemonParty>();
+             float[] position = playerController.getPosition();
+            //  string wallet = playerController.getWallet();
+
+             StartCoroutine(SendToServer.Save("0x0klj13jklj24", position[0], position[1], playerParty));
          }
 
          state = GameState.FreeRoam;
