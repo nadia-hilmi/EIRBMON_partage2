@@ -49,7 +49,7 @@ public class GetFromServer : MonoBehaviour
             {
                 var res = www.downloadHandler.text;
                 Info info = JsonUtility.FromJson<Info>(res);
-                // Debug.Log("passed"+res);
+                Debug.Log("passed"+info);
 
                 string[] infos = new string[5];
                 infos[0] = info.nft_id.ToString();

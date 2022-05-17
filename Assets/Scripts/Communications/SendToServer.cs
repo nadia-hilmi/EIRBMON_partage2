@@ -16,11 +16,11 @@ public class SendToServer : MonoBehaviour
         
     }
 
-    public static IEnumerator CatchedPokemon(string addr , int id)
+    public static IEnumerator CatchedPokemon(string wallet , int tokenId)
     {
         WWWForm form = new WWWForm();
-        form.AddField("owner", addr);
-        form.AddField("id", id);
+        form.AddField("user_wallet", wallet);
+        form.AddField("nft_id", tokenId);
         Debug.Log(form);
 
         using (UnityWebRequest www = UnityWebRequest.Post("http://localhost:3001/unity/catching",  form))
@@ -37,16 +37,26 @@ public class SendToServer : MonoBehaviour
             }
         }
     }
-
-    public static IEnumerator SavePosition(string wallet , int posX,int posY)
+    public static IEnumerator Save(string wallet , float x, float y, PokemonParty pokemonsParty)
     {
         WWWForm form = new WWWForm();
         form.AddField("user_wallet", wallet);
-        form.AddField("user_x", posX);
-        form.AddField("user_y",posY);
+        form.AddField("user_x", x.ToString("0.0000"));
+        form.AddField("user_y", y.ToString("0.0000"));
+
+        List<Pokemon> pokemons = pokemonsParty.getList();
+
+        foreach (var pokemon in pokemons)
+        {
+            var id = pokemon.getId();
+            var level = pokemon.getLevel();
+            form.AddField("nft_id", id);
+            form.AddField("nft_level", level);
+        }
+
         Debug.Log(form);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost:3001/game/savePosition",  form))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost:3001/game/save",  form))
         {
             yield return www.SendWebRequest();
 

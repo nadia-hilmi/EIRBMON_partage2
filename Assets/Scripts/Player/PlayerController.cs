@@ -27,8 +27,16 @@ public class PlayerController : MonoBehaviour
    }
    
 
-    public void Start(){
         
+    public float[] getPosition()
+    {
+        float[] position = new float[2];
+        position[0] = transform.position.x;
+        position[1] = transform.position.y;
+        // Debug.Log(position[0]);
+        // Debug.Log(position[1]);
+
+        return position;
     }
     private void Awake()
     {
