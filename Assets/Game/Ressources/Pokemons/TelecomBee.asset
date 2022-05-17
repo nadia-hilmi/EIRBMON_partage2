@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8aea73f5ac9c8459db79b1e0ad7ab7, type: 3}
   m_Name: TelecomBee
   m_EditorClassIdentifier: 
-  name: 
+  Name: 
   description: 
-  frontSprite: {fileID: 21300000, guid: c8893cf7d578e4aa4ac63f9403297875, type: 3}
-  backSprite: {fileID: 21300000, guid: 1f20c4d161c344d508290dd838af01f7, type: 3}
+  frontSprite: {fileID: 3286163911610860551, guid: 6fccc38f7aece47cf956feebdd3fd280, type: 3}
+  backSprite: {fileID: 3286163911610860551, guid: 6fccc38f7aece47cf956feebdd3fd280, type: 3}
   type1: 1
   type2: 1
   maxHp: 100

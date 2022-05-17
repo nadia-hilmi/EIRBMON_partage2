@@ -25,7 +25,10 @@ public class Pokemon
             return id;
         }
     }
-
+    public int getId()
+    {
+        return id;
+    }
     public void setLevel(int newLevel){
         level=newLevel;
     }

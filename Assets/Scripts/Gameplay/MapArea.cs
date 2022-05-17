@@ -10,7 +10,7 @@ public class MapArea : MonoBehaviour
     [SerializeField] List<Pokemon> wildPokemons;
     [SerializeField] List<PokemonBase> PokemonsBase;
     // private Pokemon wildPokemon;
-    private string[] res;
+    public Sprite[] spriteArray;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
     PokemonParty party;
@@ -31,30 +31,55 @@ public class MapArea : MonoBehaviour
             Debug.Log(el);
         Debug.Log(wildPokemons.Count);
 
-        var wildPokemon = wildPokemons[0];
-        var id = Int16.Parse(value[0]);
+        // var wildPokemon = wildPokemons[0];
+        var pokeBase = PokemonsBase[0];
+        var tokenId = Int16.Parse(value[0]);
         var level = Int16.Parse(value[3]);
+        var itemId = Int16.Parse(value[4]);
         string image = value[4];       
 
 
-        if (id > 0 && id < 1000)
-            wildPokemon = wildPokemons[0];
-        else if (id >= 1000 && id < 2000)
-            wildPokemon = wildPokemons[1];
-        else if (id >= 2000 && id < 3000)
-            wildPokemon = wildPokemons[2];
-        else if (id >= 3000)
-            wildPokemon = wildPokemons[3];
+        if ( itemId <= 1000){
+            // wildPokemon = wildPokemons[0];
+            pokeBase = PokemonsBase[0];
+            pokeBase.SetFrontSprite(spriteArray[itemId-1]);
 
+        }
 
-        // Pokemon newPoke = new Pokemon(wildPokemon, level, id);
+        else if (itemId > 1000 && itemId <= 2000){
+            // wildPokemon = wildPokemons[1];
+            pokeBase = PokemonsBase[1];
+            pokeBase.SetFrontSprite(spriteArray[itemId-1]);
+            // wildPokemon.Init();
+            // battleSystem.gameObject.SetActive(true);
+            // worldCamera.gameObject.SetActive(false);
+            // battleSystem.StartBattle(party,wildPokemon);
+            // return;
 
-        // newPoke.Init();
-        wildPokemon.Init();
+        }
+        else if (itemId > 2000 && itemId <= 3000){
+            // wildPokemon = wildPokemons[2];
+            pokeBase = PokemonsBase[2];
+            pokeBase.SetFrontSprite(spriteArray[itemId-1]);
+
+        }
+        else if (itemId > 3000){
+            // wildPokemon = wildPokemons[3];
+            pokeBase = PokemonsBase[3];
+            pokeBase.SetFrontSprite(spriteArray[itemId-1]);
+           
+        }
+
+       
+        
+        Pokemon newPoke = new Pokemon(pokeBase, level, tokenId);
+        
+        newPoke.Init();
+        // wildPokemon.Init();
 
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
-        battleSystem.StartBattle(party,wildPokemon);
-        // battleSystem.StartBattle(party, newPoke);
+        // battleSystem.StartBattle(party,wildPokemon);
+        battleSystem.StartBattle(party, newPoke);
     }
 }
