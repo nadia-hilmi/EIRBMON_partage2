@@ -7,7 +7,7 @@ public class SendToServer : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start(){
-        SavePosition("0x0079A758B3C95d47efBCda496a3019Bea366b1A1",2,2);
+        //SavePosition("0x0079A758B3C95d47efBCda496a3019Bea366b1A1",2,2);
     }
 
     // Update is called once per frame

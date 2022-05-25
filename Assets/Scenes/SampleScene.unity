@@ -10870,10 +10870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wildPokemons: []
   PokemonsBase: []
-<<<<<<< HEAD
-=======
   spriteArray: []
->>>>>>> 4aefd0a53db0b25869c40173b6fbb850ec99ad12
   battleSystem: {fileID: 456044611}
   worldCamera: {fileID: 519420031}
 --- !u!1 &457017413
@@ -14588,9 +14585,6 @@ MonoBehaviour:
   - _base: {fileID: 11400000, guid: 44d92ba2a22f5ef4294ac91df780e790, type: 2}
     level: 5
     id: 0
-<<<<<<< HEAD
-  PokemonsBase: []
-=======
   - _base: {fileID: 11400000, guid: dc2eb4419a27ea24f99d53cfcc19570c, type: 2}
     level: 5
     id: 0
@@ -18600,7 +18594,6 @@ MonoBehaviour:
   - {fileID: 3286163911610860551, guid: 5e277f2bafd75483a9a33d7bf61507dd, type: 3}
   - {fileID: 3286163911610860551, guid: b039676ca10b84c3f819221b97515cb6, type: 3}
   - {fileID: 3286163911610860551, guid: 30535d302c8594d7ea8960985134b7bb, type: 3}
->>>>>>> 4aefd0a53db0b25869c40173b6fbb850ec99ad12
   battleSystem: {fileID: 456044611}
   worldCamera: {fileID: 519420031}
 --- !u!1 &758134666
