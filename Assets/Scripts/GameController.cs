@@ -73,6 +73,7 @@ public class GameController : MonoBehaviour
         // battleSystem.gameObject.SetActive(true);
         // worldCamera.gameObject.SetActive(false);
         var playerParty= playerController.GetComponent<PokemonParty>();
+        // var playerParty = playerController.getParty();
         var wildPokemon=FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomWildPokemon(playerParty);
         // battleSystem.StartBattle(playerParty,wildPokemon);
     }

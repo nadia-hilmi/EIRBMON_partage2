@@ -82,4 +82,38 @@ public class MapArea : MonoBehaviour
         // battleSystem.StartBattle(party,wildPokemon);
         battleSystem.StartBattle(party, newPoke);
     }
+
+
+    // public List<Pokemon> getPLayerParty(PlayerController player)
+    // {
+    //     List<Pokemon> pokemons = new List<Pokemon>[];
+    //     var ids = player.getIds();
+    //     var levels = player.getPokemonsLevel();
+    //     int i = 0;
+    //     var itemId = player.getPokemonImagesId();
+    //     var pokeBase = PokemonsBase[0];
+    //     foreach(int id in ids)
+    //     {
+    //         if ( itemId[i] <= 1000){
+    //             pokeBase = PokemonsBase[0];
+    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+
+    //         }
+    //         else if (itemId[i] > 1000 && itemId[i] <= 2000){
+    //             pokeBase = PokemonsBase[1];
+    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+    //         }
+    //         else if (itemId[i] > 2000 && itemId[i] <= 3000){
+    //             pokeBase = PokemonsBase[2];
+    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+    //         }
+    //         else if (itemId[i] > 3000){
+    //             pokeBase = PokemonsBase[3];
+    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+    //         }
+    //         pokemons.Add(new Pokemon(pokeBase, levels[i], id));
+    //         ++i;
+    //     }
+    //     return pokemons;
+    // }
 }

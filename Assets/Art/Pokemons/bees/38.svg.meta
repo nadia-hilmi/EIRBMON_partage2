@@ -39,16 +39,16 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: 38Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.49998274, y: 0.4999926}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: c208928308bec4dc29ff24ca579d4218
+        width: 5081
+        height: 4484
+      spriteID: afc57ffaafce742828101d4a7d9e785c
     PhysicsOutlines: []

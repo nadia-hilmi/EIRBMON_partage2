@@ -338,7 +338,9 @@ public class BattleSystem : MonoBehaviour
                 playerParty.AddPokemon(enemyUnit.Pokemon);
                 yield return dialogBox.TypeDialog($"The Eirbee has been added to your party");
                 var id = enemyUnit.Pokemon.getId();
-                StartCoroutine(SendToServer.CatchedPokemon("0x0klj13jklj24",id));
+                // var wallet = playerUnit.getWallet();
+                var wallet = "0x0000000000000";
+                StartCoroutine(SendToServer.CatchedPokemon(wallet,id));
 
 
                 Destroy(pokeball);
