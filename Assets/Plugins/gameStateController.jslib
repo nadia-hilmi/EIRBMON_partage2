@@ -3,5 +3,5 @@
      OnGameStarted: function ()
      {
            window.gameIsRunning = true ;
-     }
- }
+     },
+ )};
