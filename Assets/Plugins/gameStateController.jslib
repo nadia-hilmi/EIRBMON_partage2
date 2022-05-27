@@ -4,4 +4,4 @@
      {
            window.gameIsRunning = true ;
      },
- )};
+ });
