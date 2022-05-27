@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public void setWallet (string newWallet) {
         wallet=newWallet;
+        Debug.Log(wallet);
    }
 
     public string getWallet () {

@@ -18,22 +18,12 @@ public class GetFromServer : MonoBehaviour
     }
 
     public class PlayerData{
-        public string wallet;
         public int posX;
         public int posY;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public static IEnumerator GetWildPokemon(System.Action<string[]> callbackOnFinish)
 
@@ -49,7 +39,7 @@ public class GetFromServer : MonoBehaviour
             {
                 var res = www.downloadHandler.text;
                 Info info = JsonUtility.FromJson<Info>(res);
-                Debug.Log("passed"+info);
+                //Debug.Log("passed"+info);
 
                 string[] infos = new string[5];
                 infos[0] = info.nft_id.ToString();
@@ -65,10 +55,13 @@ public class GetFromServer : MonoBehaviour
     }
 
 
-    public static IEnumerator GetPosition(System.Action<string[]> callbackOnFinish)
+    public static IEnumerator GetPosition(string wallet, System.Action<string[]> callbackOnFinish)
 
     {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost:3001/game/position"))
+        // string wallet="0x0079A758B3C95d47efBCda496a3019Bea366b1A1";
+        WWWForm form = new WWWForm();
+        form.AddField("user_wallet", wallet);
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost:3001/game/position",form))
         {
             yield return www.SendWebRequest();
 
@@ -79,13 +72,11 @@ public class GetFromServer : MonoBehaviour
             {
                 var res = www.downloadHandler.text;
                 PlayerData playerData = JsonUtility.FromJson<PlayerData>(res);
-                // Debug.Log("passed"+res);
 
                 string[] data = new string[2];
                 data[0] = playerData.posX.ToString();
                 data[1] = playerData.posY.ToString();
                 
-                // Debug.Log(infos);
                 callbackOnFinish(data);
                 yield return null;
             }

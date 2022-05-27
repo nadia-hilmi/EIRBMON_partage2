@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Threading.Tasks;
 
 public enum GameState{FreeRoam,Battle, Menu}
 
@@ -15,7 +17,10 @@ public class GameController : MonoBehaviour
     
     public void setWalletUser (string wallet) {
         playerController.setWallet(wallet);
-
+        Debug.Log("Le wallet est: " );
+        Debug.Log(wallet);
+        string[] positionFromServer = new string[2]; 
+        Coroutine coroutine = StartCoroutine(GetFromServer.GetPosition(wallet, changePosition));
     }
 
      
@@ -53,7 +58,8 @@ public class GameController : MonoBehaviour
 
     
 
-    private void Start(){
+    public void Start(){
+        
         playerController.OnEncountered+=StartBattle;
         battleSystem.OnBattleOver+=EndBattle;
 
@@ -66,6 +72,27 @@ public class GameController : MonoBehaviour
 
         menuController.onMenuSelected += onMenuSelected; 
         //GetFromServer.GetPosition(playerController.getWallet());
+
+        
+        
+    }
+
+   /* public void receivePosition(){
+        var wallet=playerController.getWallet();
+        Debug.Log("Le wallet est: " );
+        Debug.Log(wallet);
+        string[] positionFromServer = new string[2]; 
+        Coroutine coroutine = StartCoroutine(GetFromServer.GetPosition(changePosition));
+
+    }*/
+
+    public void changePosition(string[] position){
+        foreach(string el in position)
+            Debug.Log(el);
+        var posX = Int16.Parse(position[0]);
+        var posY = Int16.Parse(position[1]);
+        playerController.transform.position = new Vector3(posX,posY,0);
+        Debug.Log("le joueur a changé de position");
     }
 
     void StartBattle(){
