@@ -18,9 +18,35 @@ public class PlayerController : MonoBehaviour
 
     public string wallet;
 
+    public int [] level=new int[6];
+    public int [] hp=new int[6];
+    public int [] id=new int[6];
+
+    public int [] images=new int[6];
+
+
+    public void setImages (int [] newImages) {
+        images=newImages;
+   }
+
+
+
+    public void setID (int [] newID) {
+        id=newID;
+   }
+
+   public void setHP (int [] newHP) {
+        hp=newHP;
+   }
+
+   public void setLevel (int [] newLevel) {
+        level=newLevel;
+   }
+
+
+
     public void setWallet (string newWallet) {
         wallet=newWallet;
-        Debug.Log(wallet);
    }
 
     public string getWallet () {

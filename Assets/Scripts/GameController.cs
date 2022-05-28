@@ -15,12 +15,24 @@ public class GameController : MonoBehaviour
 
     MenuController menuController;
     
-    public void setWalletUser (string wallet) {
+    public void initialisationData (string wallet) {
+        //on recupere le wallet
         playerController.setWallet(wallet);
         Debug.Log("Le wallet est: " );
         Debug.Log(wallet);
+        //on recupere la position du player
         string[] positionFromServer = new string[2]; 
-        Coroutine coroutine = StartCoroutine(GetFromServer.GetPosition(wallet, changePosition));
+        Coroutine coroutinePosition = StartCoroutine(GetFromServer.GetPosition(wallet, changePosition));
+        //on recupere les eirbees du player
+        string[] eirbeesIDFromServer = new string[6]; 
+        Coroutine coroutineEirbeesID = StartCoroutine(GetFromServer.GetEirbeesID(wallet, setEirbeesID));
+        string[] eirbeesHPFromServer = new string[6]; 
+        Coroutine coroutineEirbeesHP = StartCoroutine(GetFromServer.GetEirbeesHP(wallet, setEirbeesHP));
+        string[] eirbeesLevelFromServer = new string[6]; 
+        Coroutine coroutineEirbeesLevel = StartCoroutine(GetFromServer.GetEirbeesLevel(wallet, setEirbeesLevel));
+
+        string[] eirbeesImageFromServer = new string[6]; 
+        Coroutine coroutineEirbeesImage = StartCoroutine(GetFromServer.GetEirbeesImages(wallet, setEirbeesImage));
     }
 
      
@@ -77,14 +89,45 @@ public class GameController : MonoBehaviour
         
     }
 
-   /* public void receivePosition(){
-        var wallet=playerController.getWallet();
-        Debug.Log("Le wallet est: " );
-        Debug.Log(wallet);
-        string[] positionFromServer = new string[2]; 
-        Coroutine coroutine = StartCoroutine(GetFromServer.GetPosition(changePosition));
 
-    }*/
+    public void setEirbeesImage(string[] eirbees){
+        int[] image= new int[6];
+        for(int i=0;i<6;i++)
+            image[i]=Int16.Parse(eirbees[i]);
+        playerController.setImages(image);
+        Debug.Log("le joueur a bien recu les images");
+        Debug.Log(playerController.images[0]);
+        Debug.Log("Fin verifications images");
+    }
+    public void setEirbeesHP(string[] eirbees){
+        int[] hp= new int[6];
+        for(int i=0;i<6;i++)
+            hp[i]=Int16.Parse(eirbees[i]);
+        playerController.setHP(hp);
+        Debug.Log("le joueur a bien recu les HP");
+        Debug.Log(playerController.hp[0]);
+        Debug.Log("Fin verifications HP");
+    }
+
+    public void setEirbeesLevel(string[] eirbees){
+        int[] level= new int[6];
+        for(int i=0;i<6;i++)
+            level[i]=Int16.Parse(eirbees[i]);
+        playerController.setLevel(level);
+        Debug.Log("le joueur a bien recu les levels");
+        Debug.Log(playerController.level[0]);
+        Debug.Log("Fin verifications levels");
+    }
+
+    public void setEirbeesID(string[] eirbees){
+         int[] level= new int[6];
+        for(int i=0;i<6;i++)
+            level[i]=Int16.Parse(eirbees[i]);
+        playerController.setID(level);
+        Debug.Log("le joueur a bien recu les ids");
+        Debug.Log(playerController.id[0]);
+        Debug.Log("Fin verifications ids");
+    }
 
     public void changePosition(string[] position){
         foreach(string el in position)
