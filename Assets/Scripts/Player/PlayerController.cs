@@ -24,9 +24,22 @@ public class PlayerController : MonoBehaviour
 
     public int [] images=new int[6];
 
+    public PokemonParty pokemonParty;
 
+
+    public void setPokemonParty(PokemonParty _pokemonParty){
+        pokemonParty=_pokemonParty;
+    }
+    public PokemonParty getPokemonParty(){
+        Debug.Log("number of pokemons");
+        pokemonParty.number();
+        return pokemonParty;
+    }
     public void setImages (int [] newImages) {
         images=newImages;
+   }
+   public int[] getPokemonImages(){
+       return images;
    }
 
 
@@ -34,13 +47,22 @@ public class PlayerController : MonoBehaviour
     public void setID (int [] newID) {
         id=newID;
    }
+   public int[] getIds(){
+       return id;
+   }
 
    public void setHP (int [] newHP) {
         hp=newHP;
    }
+   public int[] getHP(){
+       return hp;
+   }
 
    public void setLevel (int [] newLevel) {
         level=newLevel;
+   }
+   public int[] getPokemonsLevel(){
+       return level;
    }
 
 
@@ -52,6 +74,7 @@ public class PlayerController : MonoBehaviour
     public string getWallet () {
         return wallet;
    }
+
    
 
         

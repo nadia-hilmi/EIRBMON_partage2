@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     [SerializeField] PlayerController playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
+    MapArea mapArea;
     GameState state;
 
     MenuController menuController;
@@ -33,6 +34,7 @@ public class GameController : MonoBehaviour
 
         string[] eirbeesImageFromServer = new string[6]; 
         Coroutine coroutineEirbeesImage = StartCoroutine(GetFromServer.GetEirbeesImages(wallet, setEirbeesImage));
+
     }
 
      
@@ -95,18 +97,18 @@ public class GameController : MonoBehaviour
         for(int i=0;i<6;i++)
             image[i]=Int16.Parse(eirbees[i]);
         playerController.setImages(image);
-        Debug.Log("le joueur a bien recu les images");
-        Debug.Log(playerController.images[0]);
-        Debug.Log("Fin verifications images");
+        // Debug.Log("le joueur a bien recu les images");
+        // Debug.Log(playerController.images[0]);
+        // Debug.Log("Fin verifications images");
     }
     public void setEirbeesHP(string[] eirbees){
         int[] hp= new int[6];
         for(int i=0;i<6;i++)
             hp[i]=Int16.Parse(eirbees[i]);
         playerController.setHP(hp);
-        Debug.Log("le joueur a bien recu les HP");
-        Debug.Log(playerController.hp[0]);
-        Debug.Log("Fin verifications HP");
+        // Debug.Log("le joueur a bien recu les HP");
+        // Debug.Log(playerController.hp[0]);
+        // Debug.Log("Fin verifications HP");
     }
 
     public void setEirbeesLevel(string[] eirbees){
@@ -114,9 +116,9 @@ public class GameController : MonoBehaviour
         for(int i=0;i<6;i++)
             level[i]=Int16.Parse(eirbees[i]);
         playerController.setLevel(level);
-        Debug.Log("le joueur a bien recu les levels");
-        Debug.Log(playerController.level[0]);
-        Debug.Log("Fin verifications levels");
+        // Debug.Log("le joueur a bien recu les levels");
+        // Debug.Log(playerController.level[0]);
+        // Debug.Log("Fin verifications levels");
     }
 
     public void setEirbeesID(string[] eirbees){
@@ -124,9 +126,9 @@ public class GameController : MonoBehaviour
         for(int i=0;i<6;i++)
             level[i]=Int16.Parse(eirbees[i]);
         playerController.setID(level);
-        Debug.Log("le joueur a bien recu les ids");
-        Debug.Log(playerController.id[0]);
-        Debug.Log("Fin verifications ids");
+        // Debug.Log("le joueur a bien recu les ids");
+        // Debug.Log(playerController.id[0]);
+        // Debug.Log("Fin verifications ids");
     }
 
     public void changePosition(string[] position){
@@ -139,11 +141,13 @@ public class GameController : MonoBehaviour
     }
 
     void StartBattle(){
+       FindObjectOfType<MapArea>().GetComponent<MapArea>().createPlayerParty(playerController);
+        // mapArea.createPlayerParty(playerController);
         state=GameState.Battle;
         // battleSystem.gameObject.SetActive(true);
         // worldCamera.gameObject.SetActive(false);
-        var playerParty= playerController.GetComponent<PokemonParty>();
-        // var playerParty = playerController.getParty();
+        // var playerParty= playerController.GetComponent<PokemonParty>();
+        var playerParty = playerController.getPokemonParty();
         var wildPokemon=FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomWildPokemon(playerParty);
         // battleSystem.StartBattle(playerParty,wildPokemon);
     }

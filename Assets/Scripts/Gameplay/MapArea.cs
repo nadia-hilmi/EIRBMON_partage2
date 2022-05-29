@@ -27,9 +27,9 @@ public class MapArea : MonoBehaviour
     }
 
     public void OnComplete(string[] value) {
-        foreach(string el in value)
-            Debug.Log(el);
-        Debug.Log(wildPokemons.Count);
+        // foreach(string el in value)
+            // Debug.Log(el);
+        // Debug.Log(wildPokemons.Count);
 
         // var wildPokemon = wildPokemons[0];
         var pokeBase = PokemonsBase[0];
@@ -84,36 +84,56 @@ public class MapArea : MonoBehaviour
     }
 
 
-    // public List<Pokemon> getPLayerParty(PlayerController player)
-    // {
-    //     List<Pokemon> pokemons = new List<Pokemon>[];
-    //     var ids = player.getIds();
-    //     var levels = player.getPokemonsLevel();
-    //     int i = 0;
-    //     var itemId = player.getPokemonImagesId();
-    //     var pokeBase = PokemonsBase[0];
-    //     foreach(int id in ids)
-    //     {
-    //         if ( itemId[i] <= 1000){
-    //             pokeBase = PokemonsBase[0];
-    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+    public void createPlayerParty(PlayerController player)
+    {
+        List<Pokemon> pokemons = new List<Pokemon>();
+        var ids = player.getIds();
+        Debug.Log("ids length");
+        Debug.Log(ids.Length);
+        var levels = player.getPokemonsLevel();
+        int i = 0;
+        var itemId = player.getPokemonImages();
+        // Debug.Log("pokemonbase length");
+        // Debug.Log(PokemonsBase.Count);
+        var pokeBase = PokemonsBase[0];
+        foreach(int id in ids)
+        {
+            Debug.Log("current id");
+            Debug.Log(id);
+            if(id == 0){i++;break;}
+            Debug.Log("current image id");
+            Debug.Log(itemId[i]);
+            if ( itemId[i] <= 1000){
+                pokeBase = PokemonsBase[0];
+                pokeBase.SetFrontSprite(spriteArray[itemId[i]-1]);
+                pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
 
-    //         }
-    //         else if (itemId[i] > 1000 && itemId[i] <= 2000){
-    //             pokeBase = PokemonsBase[1];
-    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
-    //         }
-    //         else if (itemId[i] > 2000 && itemId[i] <= 3000){
-    //             pokeBase = PokemonsBase[2];
-    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
-    //         }
-    //         else if (itemId[i] > 3000){
-    //             pokeBase = PokemonsBase[3];
-    //             pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
-    //         }
-    //         pokemons.Add(new Pokemon(pokeBase, levels[i], id));
-    //         ++i;
-    //     }
-    //     return pokemons;
-    // }
+            }
+            else if (itemId[i] > 1000 && itemId[i] <= 2000){
+                pokeBase = PokemonsBase[1];
+                pokeBase.SetFrontSprite(spriteArray[itemId[i]-1]);
+                pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+            }
+            else if (itemId[i] > 2000 && itemId[i] <= 3000){
+                pokeBase = PokemonsBase[2];
+                pokeBase.SetFrontSprite(spriteArray[itemId[i]-1]);
+                pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+            }
+            else if (itemId[i] > 3000){
+                pokeBase = PokemonsBase[3];
+                pokeBase.SetFrontSprite(spriteArray[itemId[i]-1]);
+                pokeBase.SetBackSprite(spriteArray[itemId[i]-1]);
+            }
+            Pokemon newpoke = new Pokemon(pokeBase, levels[i], id);
+            newpoke.Init();
+            pokemons.Add(newpoke);
+            i++;
+        }
+        Debug.Log("Pokemon party length final");
+        Debug.Log(pokemons.Count);
+        PokemonParty pokemonParty = new PokemonParty(pokemons);
+        player.setPokemonParty(pokemonParty);
+        Debug.Log("finished creating party");
+
+    }
 }

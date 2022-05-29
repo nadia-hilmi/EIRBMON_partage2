@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class PokemonParty : MonoBehaviour
 {
-    [SerializeField] List<Pokemon> pokemons;
+    private List<Pokemon> pokemons;
 
+    public PokemonParty(List<Pokemon> _pokemons){
+        pokemons = _pokemons;
+    }
     public List<Pokemon> Pokemons{
         get{
             return pokemons;
@@ -22,6 +25,7 @@ public class PokemonParty : MonoBehaviour
 
     }
 
+
     public Pokemon GetHealthyPokemon(){
         return pokemons.Where(x=>x.HP>0).FirstOrDefault();//return le premier pokemon avec HP>0
     }
@@ -36,5 +40,10 @@ public class PokemonParty : MonoBehaviour
         {
             // TODO: ADD to the pc
         }
+    }
+
+    public void number()
+    {
+        Debug.Log(pokemons.Count);
     }
 }

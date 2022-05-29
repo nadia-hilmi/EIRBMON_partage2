@@ -10,6 +10,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleUnit playerUnit;
     [SerializeField] BattleUnit enemyUnit;
     
+    [SerializeField] PlayerController playerController;
 
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] PartyScreen partyScreen;
@@ -338,8 +339,8 @@ public class BattleSystem : MonoBehaviour
                 playerParty.AddPokemon(enemyUnit.Pokemon);
                 yield return dialogBox.TypeDialog($"The Eirbee has been added to your party");
                 var id = enemyUnit.Pokemon.getId();
-                // var wallet = playerUnit.getWallet();
-                var wallet = "0x0000000000000";
+                var wallet = playerController.getWallet();
+                // var wallet = "0x0000000000000";
                 StartCoroutine(SendToServer.CatchedPokemon(wallet,id));
 
 
